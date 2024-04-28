@@ -1,0 +1,180 @@
+.header {}
+
+.header__menu-list {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 28px;
+}
+
+.header__menu-link {
+    text-decoration: none;
+}
+
+.cover {
+    background-image: url(../images/cover.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    color: #FFFFFF;
+}
+
+.cover__title {}
+
+.cover_text {}
+
+.lots {}
+
+.lots_title {
+    padding-top: 63px;
+    padding-bottom: 42px;
+}
+
+.card {
+    background-color: #90AEC4;
+    padding: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    height: 152px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.lots_title {
+    color: #666465;
+    display: flex;
+
+}
+
+.lots__card-list {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-between;
+    padding-bottom: 32px;
+}
+
+.card__text {
+    font-family: Muller;
+    font-size: 18px;
+    line-height: 25.2px;
+    color: #FFFFFF;
+}
+
+.lost_link {
+    display: flex;
+    justify-content: center;
+    font-family: Muller;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 25.2px;
+    color: #90AEC4;
+}
+
+.title_description {
+    font-family: Muller;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 33.6px;
+    text-align: left;
+    color: #666465;
+    padding-bottom: 42px;
+}
+
+.text_descrirtion {
+    display: flex;
+    flex-direction: row;
+    gap: 52px;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 21px;
+    text-align: justified;
+    padding-bottom: 53px;
+}
+
+.title_description_double {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 25.2px;
+    text-align: left;
+    padding-bottom: 32px;
+}
+
+.description__card-list-item {
+    display: flex;
+    flex-direction: row;
+    gap: 54px;
+}
+
+.description__card-list {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 21px;
+}
+
+.title_news{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 33.6px;
+    padding-bottom: 42px; 
+    color:  #666465;
+}
+
+.content-section_news{
+    list-style: none;
+    display: flex;
+    flex-direction:row;
+}
+
+.title_news_item{
+font-size: 18px;
+font-weight: 500;
+line-height: 25.2px;
+color: #666465;
+}
+
+.intro__date{
+font-family: 'Inter';
+font-size: 14px;
+font-weight: 600;
+line-height: 19.6px;
+text-align: left;
+color: #90AEC4;
+}
+
+.content-section_news_accent{
+    display: flex;
+    flex-direction: column;
+gap:25px;
+}
+
+
+.news_text{
+font-size: 14px;
+font-weight: 300;
+line-height: 21px;
+text-align: justified;
+color:#666465;
+}
+
+.news_link{
+    font-family: Muller;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 19.6px;
+    text-align: left;
+ color:#FFFFFF;
+ background-color: #90AEC4;
+height: 48px;
+width: 172px;    
+text-align: center;
+text-decoration: none;
+
+}
