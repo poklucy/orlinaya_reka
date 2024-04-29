@@ -1,6 +1,25 @@
 @font-face {
   font-family: 'Muller';
   src:
-  url(./MullerNarrow-Trial-Regular.ttf) format('ttf'),
+  url(./Muller-Trial-Medium.woff) format('woff'),
+  url(.//Muller-Trial-Medium.woff2) format('woff2');
 }
+
+@font-face {
+  font-family: 'Muller';
+  src:
+  url(./Muller-Trial-Regular.woff) format('woff'),
+  url(./Muller-Trial-Regular.woff2) format('woff2');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Muller';
+  src:
+  url(./Muller-Trial-Bold.woff) format('woff'),
+  url(./Muller-Trial-Bold.woff2) format('woff2');
+  font-weight: bold;
+}
+
+
 
