@@ -44,7 +44,7 @@
   background-image: url(../images/cover.png);
   background-size: cover;
   background-position: center;
-  height: 6.3em;
+  height: 6.2em;
   color: #ffffff;
   display: flex;
   flex-direction: column;
@@ -69,13 +69,13 @@
 }
 
 .lots {
-  padding-left: 54px;
-  padding-right: 54px;
+  padding-left: 3.375em;
+  padding-right: 3.375em;
 }
 
 .lots_title {
-  padding-top: 50px;
-  padding-bottom: 38px;
+  padding-top: 2.65em;
+  padding-bottom: 1.62em;
 }
 
 .card {
@@ -107,8 +107,8 @@
 
 .card__text {
   font-family: Muller;
-  font-size: 18px;
-  line-height: 25.2px;
+  font-size: 1.15em;
+  line-height: 140%;
   color: #ffffff;
 }
 
@@ -116,70 +116,96 @@
   display: flex;
   justify-content: center;
   font-family: Muller;
-  font-size: 18px;
+  font-size: 1.15em;
   font-weight: 500;
-  line-height: 25.2px;
+  line-height: 140%;
   color: #90aec4;
-  padding-bottom: 3em;
+  padding-bottom: 2.6em;
 }
 
 .description {
-  padding-left: 54px;
-  padding-right: 54px;
-}
-.title_description {
-  font-family: Muller;
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 33.6px;
-  text-align: left;
-  color: #666465;
-  padding-bottom: 42px;
+  padding-left: 3.375em;
+  padding-right: 3.375em;
 }
 
-.text_descrirtion {
+.title_description {
+  font-size: 1.5em;
+  font-weight: 700;
+  line-height: 140%;
+  text-align: left;
+  color: #666465;
+  padding-bottom: 1.2em;
+}
+
+.text_description {
   display: flex;
   flex-direction: row;
   text-align: justify;
-  gap: 52px;
-  font-size: 14px;
+  gap: 3.25em;
+  font-size: 0.9em;
   font-weight: 300;
-  line-height: 21px;
-  padding-bottom: 53px;
+  line-height: 150%;
+  padding-bottom: 3.35em;
   color: #666465;
 }
 
+.text_description_item{
+    flex:1;
+}
+
 .title_description_double {
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 25.2px;
+  font-size: 1.1em;
+  line-height: 140%;
   text-align: left;
-  padding-bottom: 32px;
+  padding-bottom: 0.6em;
   color: #666465;
 }
 
 .description__card-list-item {
   display: flex;
   flex-direction: row;
-  gap: 54px;
+  justify-content: space-between;
+  gap: 3em;
+  padding-bottom: 2.1em;
 }
 
 .description__card-list {
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 21px;
-  color: #666465;
+    font-size: 0.9em;
+    font-weight: 300;
+    margin-right: 0.3em; 
+    padding-left: 0.6em;
+    color: #666465;
+    line-height: 150%; 
+    flex: 1;
+    list-style: none;
+  }
+  
+  .description__card-list li {
+    position: relative;
+    padding-left: 1em;
+  }
+  
+  .description__card-list li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+  }
+
+.description__card-list_text{
+ padding-bottom: 0.8em;
 }
 
 .news {
-  padding-left: 54px;
-  padding-right: 54px;
+    padding-top: 3em;
+  padding-left: 3.375em;;
+  padding-right: 3.375em;;
+  padding-bottom: 3.375em;;
 }
 .title_news {
-  font-size: 24px;
+  font-size: 1.5em;
   font-weight: 700;
-  line-height: 33.6px;
-  padding-bottom: 42px;
+  line-height: 140%;
+  padding-bottom: 1.2em;
   color: #666465;
 }
 
@@ -187,21 +213,21 @@
   list-style: none;
   display: flex;
   flex-direction: row;
-  gap: 54px;
+  gap: 3.375em;
 }
 
 .title_news_item {
-  font-size: 18px;
+  font-size: 1.1em;
   font-weight: 500;
-  line-height: 25.2px;
+  line-height: 140%;
   color: #666465;
 }
 
 .intro__date {
   font-family: "Inter";
-  font-size: 14px;
+  font-size: 0.85em;
   font-weight: 600;
-  line-height: 19.6px;
+  line-height: 140%;
   text-align: left;
   color: #90aec4;
 }
@@ -209,35 +235,46 @@
 .content-section_news_accent {
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 0.9em;
 }
 
 .news_text {
-  font-size: 14px;
+  font-size: 0.9em;
   font-weight: 300;
-  line-height: 21px;
+  line-height: 150%;
   text-align: justified;
   color: #666465;
+  text-align: justify;
 }
 
 .news_link {
-  font-family: Muller;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 19.6px;
+ margin-top: 1.1em;
+  font-size: 0.87em;
+  line-height: 140%;
   text-align: left;
   color: #ffffff;
   background-color: #90aec4;
-  height: 48px;
-  width: 172px;
+  padding-bottom:1.1em;
+  padding-top: 1.1em;
+  width: 12.3em;
   text-align: center;
   text-decoration: none;
 }
 
 .contact {
-  display: flex;
-  flex-direction: column ;
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+  
+  .address__contact {
+    flex: 1;
+  }
+  
+  .maps_contact {
+    flex: 1;
+  }
+  
 .telephone {
   font-size: 18px;
   font-weight: 500;
