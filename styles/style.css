@@ -28,6 +28,7 @@
 
 .header__menu-link {
   text-decoration: none;
+  color:#666465;
 }
 
 .header__menu-item:hover {
