@@ -377,9 +377,9 @@ text-decoration: none;
 
 .copyright {
   font-family: Muller;
-  font-size: 11px;
+  font-size: 0.7em;
   font-weight: 300;
-  line-height: 16.5px;
+  line-height: 150%;
   text-align: left;
   color: #666465;
   
