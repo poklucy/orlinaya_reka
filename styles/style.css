@@ -265,28 +265,60 @@
     display: flex;
   justify-content: space-between;
   align-items: center;
+
 }
-  
+
+
+  .adress{
+    font-size: 0.9em;
+    line-height: 150%;
+    color: #666465;
+    font-weight: 300;
+  }
   .address__contact {
+    padding-left: 3.375em;
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap:1em;
   }
   
   .maps_contact {
     flex: 1;
+    margin-top: -0.5em;
+  }
+.adress_contact{
+    display: flex;
+    flex-direction: column;
+}
+  .title_contact{
+    font-size: 1.5em;
+line-height: 140%;
+font-weight: 700;
+color: #666465;
   }
   
 .telephone {
-  font-size: 18px;
+  font-size: 1.1em;
   font-weight: 500;
-  line-height: 25.2px;
+  line-height: 140%;
+color: #666465;
+font-weight: 500;
+text-decoration: none;
 }
+
+.email{
+    color: #90AEC4;
+    text-decoration: none;
+}
+
 .maps_contact {
-  width: 700px;
-  height: 513px;
+  width: 43.75em;
+  height: 32.063em;
 }
 
 .footer {
-  padding: 42px 54px 18px 54px;
+  padding: 2.3em 3.375em 1.125em 3.375em;
   background-color: #90aec41a;
 }
 .group_footer {
@@ -296,14 +328,15 @@
 }
 
 .logo_footer {
-  width: 262.34px;
-  height: 32px;
+  width: 16.396em;
+  height: 2em;
 }
 
 .nav_footer {
   display: flex;
   flex-direction: row;
-  gap: 142px;
+  gap: 8.875em;
+  margin-left: -2.25em;
 }
 
 .adress_footer {
@@ -313,15 +346,34 @@
 
 .footer__menu-link {
   text-decoration: none;
-  font-size: 12px;
+  font-size: 0.75em;
   font-weight: 400;
-  line-height: 16.8px;
+  line-height: 140%;
   color: #666465;
+}
+.footer_menu_item{
+    margin-bottom: 0.8em;
 }
 
 .footer__menu-list {
   list-style: none;
+  
 }
+.telephone_footer{
+    font-size: 0.9em;
+  font-weight: 500;
+  line-height: 140%;
+color: #666465;
+font-weight: 500;
+text-decoration: none;
+}
+
+.email_footer{
+    color: #90AEC4;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
 
 .copyright {
   font-family: Muller;
@@ -330,4 +382,5 @@
   line-height: 16.5px;
   text-align: left;
   color: #666465;
+  
 }
