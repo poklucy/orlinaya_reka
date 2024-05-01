@@ -1,12 +1,11 @@
 .header {
-  padding-top: 1em;
-  padding-bottom: 1em;
   display: flex;
   justify-content: space-around;
   align-items: center;
   position: sticky;
   top: 0em;
   background-color: #ffffff;
+  box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.25);
 }
 
 .logo {
@@ -18,22 +17,26 @@
   list-style: none;
   display: flex;
   flex-direction: row;
-  gap: 28px;
+  gap: 2.7em;
   align-items: center;
   color: #666465;
-  font-size: 0.75em;
+  font-size: 0.74em;
   font-weight: 400;
   line-height: 140%;
+  padding-top: 1.3em;
+  padding-bottom: 1.2em;
 }
 
 .header__menu-link {
   text-decoration: none;
-  color:#666465;
+  color: #666465;
+  display: flex;
+  padding-top: 1.1em;
+  padding-bottom: 1em;
 }
 
-.header__menu-item:hover {
-  background-color: #90aec4;
-  color: #ffffff;
+.header__menu-link:hover{
+  color: #90aec4;
 }
 
 .search {
@@ -45,7 +48,7 @@
   background-image: url(../images/cover.png);
   background-size: cover;
   background-position: center;
-  height: 6.2em;
+  height: 6.25em;
   color: #ffffff;
   display: flex;
   flex-direction: column;
@@ -54,7 +57,7 @@
   font-size: 4em;
   line-height: 140%;
   color: #fff;
-  gap: 0.5em;
+  gap: 0.456em;
 }
 
 .cover_title {
@@ -92,6 +95,9 @@
   justify-content: center;
   text-align: center;
 }
+.card:hover {
+  background-color: rgba(144, 174, 196, 0.3);
+}
 
 .lots_title {
   color: #666465;
@@ -113,6 +119,10 @@
   color: #ffffff;
 }
 
+.card__text:hover {
+  color: #666465;
+}
+
 .lost_link {
   display: flex;
   justify-content: center;
@@ -124,6 +134,9 @@
   padding-bottom: 2.6em;
 }
 
+.lost_link:hover {
+  color: #666465;
+}
 .description {
   padding-left: 3.375em;
   padding-right: 3.375em;
@@ -131,7 +144,6 @@
 
 .title_description {
   font-size: 1.5em;
-  font-weight: 700;
   line-height: 140%;
   text-align: left;
   color: #666465;
@@ -139,8 +151,6 @@
 }
 
 .text_description {
-  display: flex;
-  flex-direction: row;
   text-align: justify;
   gap: 3.25em;
   font-size: 0.9em;
@@ -148,10 +158,7 @@
   line-height: 150%;
   padding-bottom: 3.35em;
   color: #666465;
-}
-
-.text_description_item{
-    flex:1;
+  column-count: 2;
 }
 
 .title_description_double {
@@ -160,6 +167,7 @@
   text-align: left;
   padding-bottom: 0.6em;
   color: #666465;
+  font-weight: 500;
 }
 
 .description__card-list-item {
@@ -167,41 +175,44 @@
   flex-direction: row;
   justify-content: space-between;
   gap: 3em;
-  padding-bottom: 2.1em;
+  padding-bottom: 2.34em;
 }
 
 .description__card-list {
-    font-size: 0.9em;
-    font-weight: 300;
-    margin-right: 0.3em; 
-    padding-left: 0.6em;
-    color: #666465;
-    line-height: 150%; 
-    flex: 1;
-    list-style: none;
-  }
-  
-  .description__card-list li {
-    position: relative;
-    padding-left: 1em;
-  }
-  
-  .description__card-list li::before {
-    content: "•";
-    position: absolute;
-    left: 0;
-  }
+  font-size: 0.9em;
+  font-weight: 300;
+  margin-right: 0.3em;
+  padding-left: 0.6em;
+  color: #666465;
+  line-height: 150%;
+  flex: 1;
+  list-style: none;
+}
 
-.description__card-list_text{
- padding-bottom: 0.8em;
+.description__card-list li {
+  position: relative;
+  padding-left: 1em;
+}
+
+.description__card-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+}
+
+.description__card-list_text {
+  padding-bottom: 0.8em;
 }
 
 .news {
-    padding-top: 3em;
-  padding-left: 3.375em;;
-  padding-right: 3.375em;;
-  padding-bottom: 3.375em;;
+  padding-top: 3.6em;
+  padding-left: 3.375em;
+  padding-right: 3.375em;
+  padding-bottom: 4em;
+  border-top: 1px solid rgba(102, 100, 101, 0.5);
+  border-bottom: 1px solid rgba(102, 100, 101, 0.5);
 }
+
 .title_news {
   font-size: 1.5em;
   font-weight: 700;
@@ -245,72 +256,80 @@
   line-height: 150%;
   text-align: justified;
   color: #666465;
-  text-align: justify;
+  text-align: left;
 }
 
 .news_link {
- margin-top: 1.1em;
+  margin-top: 1.1em;
   font-size: 0.87em;
   line-height: 140%;
   text-align: left;
   color: #ffffff;
   background-color: #90aec4;
-  padding-bottom:1.1em;
+  padding-bottom: 1.1em;
   padding-top: 1.1em;
   width: 12.3em;
   text-align: center;
   text-decoration: none;
 }
 
+.news_link:hover {
+  background-color: rgba(144, 174, 196, 0.3);
+  color: #666465;
+}
+
 .contact {
-    display: flex;
+  display: flex;
   justify-content: space-between;
   align-items: center;
-
 }
 
-
-  .adress{
-    font-size: 0.9em;
-    line-height: 150%;
-    color: #666465;
-    font-weight: 300;
-  }
-  .address__contact {
-    padding-left: 3.375em;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap:1em;
-  }
-  
-  .maps_contact {
-    flex: 1;
-    margin-top: -0.5em;
-  }
-.adress_contact{
-    display: flex;
-    flex-direction: column;
+.adress {
+  font-size: 0.9em;
+  line-height: 150%;
+  color: #666465;
+  font-weight: 300;
 }
-  .title_contact{
-    font-size: 1.5em;
-line-height: 140%;
-font-weight: 700;
-color: #666465;
-  }
-  
+.address__contact {
+  padding-left: 3.375em;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.maps_contact {
+  flex: 1;
+}
+.adress_contact {
+  display: flex;
+  flex-direction: column;
+}
+
+.title_contact {
+  font-size: 1.5em;
+  line-height: 140%;
+  font-weight: 700;
+  color: #666465;
+  padding-bottom: 1em;
+}
+
 .telephone {
   font-size: 1.1em;
   font-weight: 500;
   line-height: 140%;
-color: #666465;
-font-weight: 500;
-text-decoration: none;
+  color: #666465;
+  font-weight: 500;
+  text-decoration: none;
 }
 
-.email{
-    color: #90AEC4;
-    text-decoration: none;
+.email {
+  color: #90aec4;
+  text-decoration: none;
+}
+
+.email:hover {
+  color: #666465;
 }
 
 .maps_contact {
@@ -352,29 +371,31 @@ text-decoration: none;
   line-height: 140%;
   color: #666465;
 }
-.footer_menu_item{
-    margin-bottom: 0.8em;
+.footer_menu_item {
+  margin-bottom: 0.8em;
 }
 
 .footer__menu-list {
   list-style: none;
-  
 }
-.telephone_footer{
-    font-size: 0.9em;
+.telephone_footer {
+  font-size: 0.9em;
   font-weight: 500;
   line-height: 140%;
-color: #666465;
-font-weight: 500;
-text-decoration: none;
+  color: #666465;
+  font-weight: 500;
+  text-decoration: none;
 }
 
-.email_footer{
-    color: #90AEC4;
-    text-decoration: none;
-    font-size: 0.9em;
+.email_footer {
+  color: #90aec4;
+  text-decoration: none;
+  font-size: 0.9em;
 }
 
+.email_footer:hover {
+  color: #666465;
+}
 
 .copyright {
   font-family: Muller;
@@ -383,5 +404,4 @@ text-decoration: none;
   line-height: 150%;
   text-align: left;
   color: #666465;
-  
 }
