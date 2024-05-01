@@ -190,14 +190,14 @@
 }
 
 .description__card-list li {
-  position: relative;
   padding-left: 1em;
 }
 
 .description__card-list li::before {
   content: "•";
-  position: absolute;
-  left: 0;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em; 
 }
 
 .description__card-list_text {
@@ -238,10 +238,10 @@
 .intro__date {
   font-family: "Inter";
   font-size: 0.85em;
-  font-weight: 600;
   line-height: 140%;
   text-align: left;
   color: #90aec4;
+  font-weight: 600;
 }
 
 .content-section_news_accent {

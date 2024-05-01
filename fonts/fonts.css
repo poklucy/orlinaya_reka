@@ -108,3 +108,11 @@
   font-weight: 500;
   font-style: italic;
 }
+
+@font-face {
+  font-family: "Inter";
+  src: 
+    url("Inter-SemiBold.ttf") format("truetype");
+    src: local("Inter Semi Bold"), local("Inter Semi Bold");
+  
+}
