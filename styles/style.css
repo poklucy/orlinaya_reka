@@ -40,12 +40,12 @@
   display: flex;
   padding-top: 1.1em;
   padding-bottom: 1em;
+  transition: all 0.3s ease-in;
 }
 
 .header__menu-link:hover{
   color: #90aec4;
 }
-
 
 .header__menu-item._active {
   background: #90AEC4;
@@ -63,6 +63,10 @@
 
 .search_btn a {
   display: block;
+}
+
+.search_btn:hover {
+  background-image: url(../images/logo_hover.svg);
 }
 
 .cover {
@@ -115,9 +119,20 @@
   align-items: center;
   justify-content: center;
   text-align: center;
+  transition: all 0.3s ease-in;
+}
+.card__text {
+  font-family: Muller;
+  font-size: 1.15em;
+  line-height: 140%;
+  color: #ffffff;
 }
 .card:hover {
   background-color: rgba(144, 174, 196, 0.3);
+}
+
+.card__text:hover {
+  color: #666465;
 }
 
 .lots_title {
@@ -133,17 +148,6 @@
   padding-bottom: 3em;
 }
 
-.card__text {
-  font-family: Muller;
-  font-size: 1.15em;
-  line-height: 140%;
-  color: #ffffff;
-}
-
-.card__text:hover {
-  color: #666465;
-}
-
 .lost_link {
   display: flex;
   justify-content: center;
@@ -153,6 +157,7 @@
   line-height: 140%;
   color: #90aec4;
   padding-bottom: 2.6em;
+  transition: all 0.3s ease-in;
 }
 
 .lost_link:hover {
@@ -300,6 +305,7 @@
   width: 12.3em;
   text-align: center;
   text-decoration: none;
+  transition: all 0.3s ease-in;
 }
 
 .news_link:hover {
@@ -355,6 +361,7 @@
 .email {
   color: #90aec4;
   text-decoration: none;
+  transition: all 0.3s ease-in;
 }
 
 .email:hover {
@@ -399,6 +406,7 @@
   font-weight: 400;
   line-height: 140%;
   color: #666465;
+  transition: all 0.3s ease-in;
 }
 .footer_menu_item {
   margin-bottom: 0.8em;
@@ -420,6 +428,7 @@
   color: #90aec4;
   text-decoration: none;
   font-size: 0.9em;
+  transition: all 0.3s ease-in;
 }
 
 .email_footer:hover {
@@ -434,6 +443,25 @@
   text-align: left;
   color: #666465;
 }
+
+ul.breadcrumb {
+  padding: 1em 0em 1em 0em;
+  list-style: none;
+}
+
+ul.breadcrumb li {
+  display: inline;
+  font-size: 0.8em;
+  color:#666465;
+  line-height: 150%;
+  font-weight: 300;
+}
+
+ul.breadcrumb li+li:before {
+  color: black;
+  content: "/\00a0";
+}
+
 
 .first_part{
   padding: 1.5em 21.375em 3.938em 3.375em;
@@ -462,4 +490,57 @@ padding-bottom: 2em;
   display: flex;
   flex-direction: column;
   gap:1em;
+}
+
+.title_second{
+  font-weight: 500;
+font-size: 1.1em;
+line-height: 140%;
+color: #90aec4;
+}
+
+.information_table{
+  display: flex;
+  flex-direction: row;
+  gap:1.563em;
+  justify-content: space-between;
+}
+.menu{
+  padding-left: 3.375em;
+  display: flex;
+  list-style: none;
+  gap: 0.25em;
+  flex-direction: column;
+}
+
+.left_menu_link{
+  display: flex;
+  text-decoration: none;
+  font-weight: 300;
+font-size: 0.8em;
+line-height: 150%;
+color: #666465;
+background-color: rgba(144, 174, 196, 0.1);
+padding-left: 1em;
+padding-top: 1em;
+padding-bottom: 1em;
+width: 70%;
+}
+
+
+.pointer{
+  height: 0.5em;
+  width: 1em;
+}
+
+.column_indormation{
+ 
+}
+
+.column_data{
+  
+}
+
+.column_period{
+ 
 }
