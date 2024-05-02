@@ -514,6 +514,9 @@ color: #90aec4;
   gap:1.563em;
 }
 
+.over_information{
+  display: flex;
+}
 
 .left_menu {
   display: inline-block;
@@ -530,7 +533,9 @@ color: #90aec4;
 
 .table_over {
   display: inline-block;
-  width:70%; 
+  width:75%; 
+  margin-top: -3.5em;
+  padding-bottom: 3.938em;
 }
 
 .left_menu_link{
@@ -545,6 +550,7 @@ padding-left: 1em;
 padding-top: 1em;
 padding-bottom: 1em;
 }
+
 
 .pointer{
   background-image: url(../images/pointer.svg);
