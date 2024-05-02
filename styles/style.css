@@ -508,18 +508,29 @@ line-height: 140%;
 color: #90aec4;
 }
 
+
 .information_table{
   display: flex;
-  flex-direction: row;
   gap:1.563em;
-  justify-content: space-between;
 }
+
+
+.left_menu {
+  display: inline-block;
+  width: 25%;
+}
+
 .menu{
   padding-left: 3.375em;
   display: flex;
   list-style: none;
   gap: 0.25em;
   flex-direction: column;
+}
+
+.table_over {
+  display: inline-block;
+  width:70%; 
 }
 
 .left_menu_link{
@@ -533,23 +544,55 @@ background-color: rgba(144, 174, 196, 0.1);
 padding-left: 1em;
 padding-top: 1em;
 padding-bottom: 1em;
-width: 70%;
 }
-
 
 .pointer{
-  height: 0.5em;
-  width: 1em;
+  background-image: url(../images/pointer.svg);
 }
 
-.column_indormation{
- 
+.custom_table{
+  border-collapse: separate;
+  border-spacing: 1.75em 0em;
 }
 
-.column_data{
-  
+.table_row{
+  border-bottom: 1px solid rgba(102, 100, 101, 0.5);
+  padding-top: 1em;
+  padding-bottom: 1em;
+  font-size: 0.8em;
 }
 
-.column_period{
- 
+.table_head{
+  font-weight: 300;
+font-size: 12px;
+line-height: 150%;
+color: #90aec4;
+}
+
+.table_title{
+text-align: left;
+}
+
+.table_body{
+  font-weight: 300;
+font-size: 0.8em;
+line-height: 150%;
+color: #666465;
+}
+
+.tel_table{
+  font-weight: 300;
+font-size: 1em;
+line-height: 150%;
+color: #666465;
+text-decoration: none;
+}
+
+.link_table{
+  font-weight: 300;
+font-size: 1em;
+line-height: 150%;
+text-decoration: underline;
+text-decoration-skip-ink: none;
+color: #90aec4;
 }
