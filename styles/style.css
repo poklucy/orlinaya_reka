@@ -551,9 +551,25 @@ padding-top: 1em;
 padding-bottom: 1em;
 }
 
+.left__menu-item._active {
+  background:rgba(144, 174, 196, 0.3);
+}
+.left__menu-item._active .left__menu-link,
+.left__menu-item._active .left__menu-link:hover {
+  color: #fff;
+}
+
+.financial_statements{
+  display: inline-block;
+}
 
 .pointer{
-  background-image: url(../images/pointer.svg);
+  background-repeat: no-repeat;
+  height: 0.5 ;
+  width: 1em;
+  display: inline-block;
+  margin-left: 5em;
+ 
 }
 
 .custom_table{
@@ -566,6 +582,19 @@ padding-bottom: 1em;
   padding-top: 1em;
   padding-bottom: 1em;
   font-size: 0.8em;
+}
+
+.table_row_over{
+  columns: 2;
+  column-gap: 1.5em;
+}
+
+.table_row_first{
+  border-bottom: 1px solid rgba(102, 100, 101, 0.5);
+  padding-top: 1em;
+  padding-bottom: 1em;
+  font-size: 0.8em;
+
 }
 
 .table_head{
@@ -601,4 +630,13 @@ line-height: 150%;
 text-decoration: underline;
 text-decoration-skip-ink: none;
 color: #90aec4;
+}
+
+.text_description_information{
+  font-weight: 300;
+font-size: 0.8em;
+line-height: 150%;
+color: #666465;
+padding-left: 1.75em;
+padding-top: 5.5em;
 }
