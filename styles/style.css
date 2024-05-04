@@ -519,9 +519,11 @@ color: #90aec4;
 }
 
 .left_menu {
-  display: inline-block;
+  /* display: inline-block; */
   width: 25%;
+  flex-shrink: 0;
 }
+
 
 .menu{
   padding-left: 3.375em;
@@ -529,11 +531,16 @@ color: #90aec4;
   list-style: none;
   gap: 0.25em;
   flex-direction: column;
+  margin-bottom: 2em;
+}
+.menu ul {
+  list-style: none;
+  border-top: 1px solid #D8D5CD;
 }
 
 .table_over {
-  display: inline-block;
-  width:75%; 
+  /* display: inline-block; */
+  /* width:75%;  */
   margin-top: -3.5em;
   padding-bottom: 3.938em;
 }
@@ -573,8 +580,13 @@ color: #90aec4;
 }
 
 .custom_table{
+  width: 100%;
   border-collapse: separate;
   border-spacing: 1.75em 0em;
+  margin-bottom: 2em;
+}
+.custom_table td {
+  vertical-align: top;
 }
 
 .table_row{
