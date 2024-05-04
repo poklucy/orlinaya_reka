@@ -542,13 +542,13 @@ color: #90aec4;
   display: flex;
   text-decoration: none;
   font-weight: 300;
-font-size: 0.8em;
-line-height: 150%;
-color: #666465;
-background-color: rgba(144, 174, 196, 0.1);
-padding-left: 1em;
-padding-top: 1em;
-padding-bottom: 1em;
+  font-size: 0.8em;
+  line-height: 150%;
+  color: #666465;
+  background-color: rgba(144, 174, 196, 0.1);
+  padding-left: 1em;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 .left__menu-item._active {
@@ -585,8 +585,10 @@ padding-bottom: 1em;
 }
 
 .table_row_over{
-  columns: 2;
-  column-gap: 1.5em;
+  -moz-columns: 2;
+       columns: 2;
+  -moz-column-gap: 1.5em;
+       column-gap: 1.5em;
 }
 
 .table_row_first{
@@ -596,19 +598,30 @@ padding-bottom: 1em;
   font-size: 0.8em;
 
 }
+.custom_table .inner-table {
+  width: 100%;
+}
+.custom_table .inner-table td {
+  vertical-align: top;
+}
+.custom_table .inner-table  td p {
+  margin-bottom: 20px;
+}
 
-.table_head{
+
+.table_head td {
   font-weight: 300;
-font-size: 12px;
-line-height: 150%;
-color: #90aec4;
+  font-size: 12px;
+  line-height: 150%;
+  color: #90aec4;
+  border-bottom: 1px solid rgba(102, 100, 101, 0.5);
 }
 
 .table_title{
 text-align: left;
 }
 
-.table_body{
+.table_body {
   font-weight: 300;
 font-size: 0.8em;
 line-height: 150%;
@@ -628,7 +641,8 @@ text-decoration: none;
 font-size: 1em;
 line-height: 150%;
 text-decoration: underline;
-text-decoration-skip-ink: none;
+-webkit-text-decoration-skip-ink: none;
+        text-decoration-skip-ink: none;
 color: #90aec4;
 }
 
