@@ -21,10 +21,25 @@
   box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.25);
   border-bottom: 1px solid rgba(102, 100, 101, 0.3);
 }
+@media (max-width: 680px) {
+  .header {
+    padding: 0 20px;
+  }
+}
 
 .logo {
   width: 12.809em;
   height: 1.563em;
+}
+
+@media (max-width: 680px) {
+  .logo {
+    width: 163px;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    float: left;
+  }
 }
 
 .header__menu-list {
@@ -41,7 +56,7 @@
 
 @media (max-width: 680px) {
   .header__menu-list {
-    display: none;
+   font-size: 0;
   }
 }
 
@@ -75,6 +90,68 @@
   color: #fff;
 }
 
+
+.main-nav__toggle {
+  display: none;
+  background: transparent;
+  border: none;
+  width: 16px;
+  height: 9px;
+  cursor: pointer;
+  position: relative;
+  z-index: 5;
+  padding: 0;
+}
+@media (max-width: 680px) {
+  .main-nav__toggle {
+    display: block;
+    position: absolute;
+    top: 28px;
+    right: 20px;
+  }
+}
+.main-nav__toggle span {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  border-radius: 1px;
+  background:  #666465;
+  transition: transform 0.3s ease, opacity 0.3s ease, background-color 0.3s ease;
+  transform-origin: 50%;
+}
+.main-nav__toggle span:nth-child(1) {
+  top: 0;
+}
+.main-nav__toggle span:nth-child(2) {
+  top: calc(50% - .5px);
+}
+.main-nav__toggle span:nth-child(3) {
+  bottom: 0px;
+}
+.main-nav__toggle.is-active span {
+  background: #666465;
+  width: 90%;
+  margin-left: 2px;
+}
+.main-nav__toggle.is-active:hover span {
+  background: #90AEC4;
+}
+
+
+.main-nav__toggle.is-active span:nth-child(1) {
+  transform: rotate(135deg);
+  margin-top: 4px;
+}
+.main-nav__toggle.is-active span:nth-child(2) {
+  opacity: 0;
+}
+.main-nav__toggle.is-active span:nth-child(3) {
+  transform: rotate(-135deg);
+  margin-bottom: 4px;
+}
+
+
 .search_btn-open {
   display: inline-block;
   width: 36px;
@@ -82,7 +159,11 @@
   font-size: 0;
   background: rgba(144, 174, 196, .3) url(../images/search.svg) 50% 50% no-repeat;
 }
-
+@media (max-width: 680px) {
+  .search_btn-open {
+    margin-right: 30px;
+  }
+}
 .search_btn-open:hover  {
   background: #90AEC4 url(../images/search_hover.svg) 50% 50% no-repeat;
 }
@@ -147,7 +228,7 @@
 
 .cover_title {
 
-  font-size: clamp(1rem, 10vw, 91px); 
+  font-size: clamp(2rem, 10vw, 4.5em); 
   font-weight: 700;
 }
 
@@ -183,10 +264,17 @@
   text-align: center;
   transition: all 0.3s ease-in;
 }
+.card span {
+  display: block;
+}
+
 @media (max-width: 680px) {
   .card {
     width: 100%;
     height: auto;
+  }
+  .card span {
+    display: unset;
   }
 }
 
