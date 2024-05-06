@@ -36,47 +36,58 @@
         <li class="header__menu-item">
           <a href="contacts.html" class="header__menu-link">КОНТАКТЫ</a>
         </li>
-        <li class="search_btn">
-         <a href="search.html">Поиск</a> 
+        <li>
+          <a href="#" class="search_btn-open">Поиск</a>
         </li>
+        <div class="search">
+          <input type="text" placeholder="Поиск">
+          <button class="search_btn">Искать</button>
+          <a href="#" class="search_btn-close">Закрыть</a>
+        </div>
       </ul>
     </nav>
   </header>
   <main>
     <section class="cover">
-      <h1 class="cover_title">Орлиная река</h1>
-      <h2 class="cover_text">ИНВЕСТИЦИОННАЯ КОМПАНИЯ</h2>
+      <div class="container">
+        <h1 class="cover_title">Орлиная река</h1>
+        <h2 class="cover_text">ИНВЕСТИЦИОННАЯ КОМПАНИЯ</h2>
+      </div>
     </section>
     <section class="lots">
-      <h1 class="lots_title">Клиентам</h1>
-      <ul class="lots__card-list">
-        <li class="card">
-          <p class="card__text">
-            Брокерские <br /> услуги
-          </p>
-        </li>
-        <li class="card">
-          <p class="card__text">
-            Депозитарные <br />услуги
-          </p>
-        </li>
-        <li class="card">
-          <p class="card__text">
-            Консультационные услуги
-          </p>
-        </li>
-        <li class="card">
-          <p class="card__text">
-            Анкеты
-          </p>
-        </li>
-        <li class="card">
-          <p class="card__text">
-            Покупка/ <br />продажа <br /> ценных бумаг
-          </p>
-        </li>
+      <div class="container">
+        <h1 class="lots_title">Клиентам</h1>
+        <ul class="lots__card-list">
+          <li class="card">
+            <p class="card__text">
+              Брокерские <br /> услуги
+            </p>
+          </li>
+          <li class="card">
+            <p class="card__text">
+              Депозитарные <br />услуги
+            </p>
+          </li>
+          <li class="card">
+            <p class="card__text">
+              Консультационные услуги
+            </p>
+          </li>
+          <li class="card">
+            <p class="card__text">
+              Анкеты
+            </p>
+          </li>
+          <li class="card">
+            <p class="card__text">
+              Покупка/ <br />продажа <br /> ценных бумаг
+            </p>
+          </li>
+        </ul>
+        <a href="#" class="lost_link">Подробнее</a>
+      </div>
     </section>
-    <a href="#" class="lost_link">Подробнее</a>
+
     <section class="description">
       <h1 class="title_description"> О компании</h1>
       <div class="text_description">
@@ -144,14 +155,14 @@
     <section class="contact">
       <div class="address__contact">
         <h1 class="title_contact">Контакты</h1>
-        <p class="adress">
+        <p class="address">
           119146, г.Москва, ул. 1-я Фрунзенская, д.3а, стр.6
         </p>
-        <adress class="adress_contact">
+        <address class="address_contact">
         <a href="+74992428693" class="telephone">+7 (499) 242-86-93</a>
         <a href="+72992428696" class="telephone">+7 (499) 242-86-96</a>
         <a href="info@oreka.ru" class="email">info@oreka.ru</a>
-      </adress>
+      </address>
       </div>
       <img src="./images/maps.jpeg" class="maps_contact">
     </section>
@@ -183,14 +194,16 @@
           </li>
         </ul>
       </nav>
-      <adress class="adress_contact">
+      <address class="address_contact">
         <a href="+74992428693" class="telephone_footer">+7 (499) 242-86-93</a>
         <a href="+72992428696" class="telephone_footer">+7 (499) 242-86-96</a>
         <a href="info@oreka.ru" class="email_footer">info@oreka.ru</a>
-      </adress>
+      </address>
     </section>
     <p class="copyright">Copyright © 2024 "Орлиная река"</p>
   </footer>
 </body>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/main.js"></script>
 
 </html>
