@@ -9,30 +9,25 @@
 }
 
 .header {
-  display: flex;
-  justify-content: space-between;
-  padding-left: 3.375em;
-  padding-right: 3.375em;
-  align-items: center;
   position: -webkit-sticky;
   position: sticky;
   top: 0em;
   background-color: #ffffff;
   box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.25);
   border-bottom: 1px solid rgba(102, 100, 101, 0.3);
-}
-@media screen and (max-width: 680px) {
-  .header {
-    padding: 0 20px;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2vw;
   }
 }
 
 .logo {
   width: 12.809em;
- 
 }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 980px) {
   .logo {
     width: 163px;
     height: auto;
@@ -42,23 +37,31 @@
   }
 }
 
+.header .main-nav {
+  position: relative;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+@media screen and (max-width: 680px) {
+  .header .main-nav {
+    position: static;
+  }
+}
+
+
 .header__menu-list {
   list-style: none;
   display: flex;
+  justify-content: flex-end;
   flex-direction: row;
-  gap: 2em;
+  gap: 1vw;
   align-items: center;
   color: #666465;
   font-size: 0.74em;
   font-weight: 400;
   line-height: 140%;
-}
-
-
-@media screen and (max-width: 680px) {
-  .header__menu-list {
-   font-size: 0;
-  }
 }
 
 
@@ -68,7 +71,34 @@
   padding-left: .8em;
   padding-right: .8em;
 }
-
+@media screen and (max-width: 980px) {
+  .header__menu-list {
+    font-size: 0;
+    transition: none;
+  }
+  .header__menu-list a {
+    transition: none;
+  }
+  .main-nav.is-active 
+    .header__menu-list {
+      font-size: 12px;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      flex-flow: column wrap;
+      justify-content: flex-start;
+      align-items: flex-start;
+      padding: 20px;
+      background: #fff;
+      width: 100%;
+      gap: 0;
+      /* box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.25); */
+      border-top: 1px solid rgba(102, 100, 101, 0.5);
+  }
+  .header__menu-item {
+    padding: 0;
+  }  
+}
 
 .header__menu-link {
   text-decoration: none;
@@ -103,7 +133,7 @@
   z-index: 5;
   padding: 0;
 }
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 980px) {
   .main-nav__toggle {
     display: block;
     position: absolute;
@@ -159,10 +189,11 @@
   height: 36px;
   font-size: 0;
   background: rgba(144, 174, 196, .3) url(../images/search.svg) 50% 50% no-repeat;
+  margin-left: 29px;
 }
 @media screen and (max-width: 680px) {
   .search_btn-open {
-    margin-right: 30px;
+    margin-right: 35px;
   }
 }
 .search_btn-open:hover  {
@@ -197,8 +228,8 @@
   position: absolute;
   background: #fff url(../images/search.svg) 0 50% no-repeat;
   height: 100%;
-  width: calc(100% - 30em);
-  right:  4.375em;
+  width: 100%;
+  right:  0;
   align-items: center;
   padding-left: 30px;
 }
@@ -210,15 +241,40 @@
   background: #fff;
   width: calc(100% - 100px);
   outline: none;
-  
 }
+@media screen and (max-width: 980px) {
+  .search.open {
+    display: block;
+    padding: 20px;
+    top: 60px;
+    background: #fff;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .search input {
+    width: 100%;
+    padding: 10px;
+    background: #F5F7F9;
+    margin-bottom: 10px;
+  }
+  .search_btn {
+    display: inline-block;
+    height: 42px;
+  }
+  .search_btn-close { 
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+}
+
+
 
 .cover {
   background-image: url(../images/cover.png);
   background-size: cover;
   background-position: center;
-  height: 6.25em;
-  color: #ffffff;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -269,7 +325,7 @@
   display: block;
 }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 860px) {
   .card {
     width: 100%;
     height: auto;
@@ -305,7 +361,7 @@
   justify-content: space-between;
   padding-bottom: 3em;
 }
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 860px) {
   .lots__card-list {
     flex-direction: column;
   }
@@ -327,8 +383,8 @@
   color: #666465;
 }
 .description {
-  padding-left: 3.375em;
-  padding-right: 3.375em;
+  /* padding-left: 3.375em;
+  padding-right: 3.375em; */
 }
 
 .title_description {
@@ -417,8 +473,6 @@
 
 .news {
   padding-top: 3.6em;
-  padding-left: 3.375em;
-  padding-right: 3.375em;
   padding-bottom: 4em;
   border-top: 1px solid rgba(102, 100, 101, 0.5);
   border-bottom: 1px solid rgba(102, 100, 101, 0.5);
@@ -438,13 +492,14 @@
   flex-direction: row;
   gap: 3.375em;
   width: 100%;
-  flex-wrap: wrap;
-  padding-left: 3.375em;
+  /* flex-wrap: wrap; */
+  /* padding-left: 3.375em; */
 }
 
 @media screen and (max-width: 680px) {
   .content-section_news{
-    flex-direction: column;
+    overflow-x: scroll;
+    padding-bottom: 20px;
   }
 }
 
@@ -472,7 +527,8 @@
 }
 @media screen and (max-width: 680px) {
   .content-section_news_accent {
-    width: 100%;
+    width: 80%;
+    flex-shrink: 0;
   }
 }
 
@@ -550,7 +606,6 @@
   font-weight: 500;
   line-height: 140%;
   color: #666465;
-  font-weight: 500;
   text-decoration: none;
 }
 
@@ -565,7 +620,7 @@
 }
 
 .maps_contact {
-  width: 43.75em;
+  width: 55vw;
   height: 32.063em;
 }
 @media screen and (max-width: 680px) {
@@ -577,17 +632,22 @@
 }
 
 .footer {
-  padding: 2.3em 3.375em 1.125em 3.375em;
+  padding: 2.3em 0 1.125em 0;
   background-color: #90aec41a;
 }
 .group_footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  .container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+
 }
 @media screen and (max-width: 680px) {
   .group_footer {
-    flex-direction: column;
+    .container {
+      flex-direction: column;
+    }
   }
 }
 
@@ -599,13 +659,14 @@
 .nav_footer {
   display: flex;
   flex-direction: row;
-  gap: 8.875em;
+  gap: 5vw;
   margin-left: -2.25em;
 }
-@media  screen and(max-width: 680px) {
+@media  screen and (max-width: 860px) {
   .nav_footer {
     display: none;
   }
+  
 }
 
 .address_footer {
@@ -633,7 +694,6 @@
   font-weight: 500;
   line-height: 140%;
   color: #666465;
-  font-weight: 500;
   text-decoration: none;
 }
 
@@ -655,6 +715,7 @@
   line-height: 150%;
   text-align: left;
   color: #666465;
+  width: 100%;
 }
 
 .breadcrumbs {
