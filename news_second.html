@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./styles/global.css" />
     <link rel="stylesheet" href="./styles/style.css" />
 </head>
-<header class="header">
+<header class="header container">
     <a href="file:///C:/Git/orlinaya_reka/index.html">
         <img src="./images/logo.svg" class="logo">
       </a>
@@ -34,11 +34,17 @@
             <li class="header__menu-item">
                 <a href="contacts.html" class="header__menu-link">КОНТАКТЫ</a>
             </li>
-            <li class="search_btn">
-                <a href="search.html">Поиск</a> 
-               </li>
-        </ul>
-    </nav>
+            <li>
+                <a href="#" class="search_btn-open">Поиск</a>
+              </li>
+              <div class="search">
+                <input type="text" placeholder="Поиск">
+                <button class="search_btn">Искать</button>
+                <a href="#" class="search_btn-close">Закрыть</a>
+              </div>
+            </ul>
+          </nav>
+          <div class="main-nav__toggle"><span></span><span></span><span></span></div>
 </header>
 <body>
     <section class="first_part">
