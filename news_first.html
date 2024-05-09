@@ -10,41 +10,43 @@
     <link rel="stylesheet" href="./styles/global.css" />
     <link rel="stylesheet" href="./styles/style.css" />
 </head>
-<header class="header container">
-    <a href="file:///C:/Git/orlinaya_reka/index.html">
-        <img src="./images/logo.svg" class="logo">
-      </a>
-    <nav>
-        <ul class="header__menu-list">
-            <li class="header__menu-item">
-                <a href="aboutcompany.html" class="header__menu-link">О КОМПАНИИ</a>
-            </li>
-            <li class="header__menu-item">
-                <a href="ihformation_first.html" class="header__menu-link">РАСКРЫТИЕ ИНФОРМАЦИИ</a>
-            </li>
-            <li class="header__menu-item">
-                <a href="klients_first.html" class="header__menu-link">КЛИЕНТАМ</a>
-            </li>
-            <li class="header__menu-item _active">
-                <a href="#" class="header__menu-link">НОВОСТИ</a>
-            </li>
-            <li class="header__menu-item">
-                <a href="#" class="header__menu-link">ОБРАТНАЯ СВЯЗЬ</a>
-            </li>
-            <li class="header__menu-item">
-                <a href="contacts.html" class="header__menu-link">КОНТАКТЫ</a>
-            </li>
-            <li>
-              <a href="#" class="search_btn-open">Поиск</a>
-            </li>
-            <div class="search">
-              <input type="text" placeholder="Поиск">
-              <button class="search_btn">Искать</button>
-              <a href="#" class="search_btn-close">Закрыть</a>
-            </div>
-          </ul>
-        </nav>
-        <div class="main-nav__toggle"><span></span><span></span><span></span></div>
+<header class="header">
+  <div class="container">
+    <a href="index.html">
+      <img src="./images/logo.svg" class="logo">
+    </a>
+    <nav class="main-nav">
+      <ul class="header__menu-list">
+        <li class="header__menu-item">
+            <a href="aboutcompany.html" class="header__menu-link">О КОМПАНИИ</a>
+        </li>
+        <li class="header__menu-item">
+          <a href="ihformation_first.html" class="header__menu-link">РАСКРЫТИЕ ИНФОРМАЦИИ</a>
+        </li>
+        <li class="header__menu-item">
+          <a href="klients_first.html" class="header__menu-link">КЛИЕНТАМ</a>
+        </li>
+        <li class="header__menu-item">
+          <a href="news_first.html" class="header__menu-link">НОВОСТИ</a>
+        </li>
+        <li class="header__menu-item">
+          <a href="#" class="header__menu-link">ОБРАТНАЯ СВЯЗЬ</a>
+        </li>
+        <li class="header__menu-item">
+          <a href="contacts.html" class="header__menu-link">КОНТАКТЫ</a>
+        </li>   
+      </ul>
+      <a href="#" class="search_btn-open">Поиск</a>
+      <div class="search">
+        <input type="text" placeholder="Поиск">
+        <button class="search_btn">Искать</button>
+        <a href="#" class="search_btn-close">Закрыть</a>
+      </div>
+
+      <div class="main-nav__toggle"><span></span><span></span><span></span></div>
+
+    </nav>
+  </div>
 </header>
 <body>
     <section class="first_part">
@@ -63,7 +65,7 @@
             </div>
         </section>
             <section class="news_pages">
-                <ul class="content-section_news">
+                <ul class="content-section_news _pages">
                   <li class="content-section_news_accent">
                     <h2 class="title_news_item"> Изменения в Регламент брокерского обслуживания</h2>
                     <time datetime="2021-01-10" class="intro__date"> 10.01.2021 </time>

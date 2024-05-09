@@ -281,16 +281,17 @@
 }
 
 .cover_title {
-  font-size: clamp(2rem, 10vw, 4.5em);
+  font-size: clamp(2rem, 10vw, 5.65em);
   font-weight: 700;
+  
 }
 
 .cover_text {
-  font-size: clamp(0.8em, 1.2vw, 14px);
+  font-size: clamp(0.8em, 1.4vw, 122px);
   font-weight: 500;
   line-height: 140%;
   letter-spacing: 0.5em;
-  margin-top: 10px;
+  margin-top: 1.3em;
 }
 
 .lots {
@@ -299,8 +300,8 @@
 }
 
 .lots_title {
-  padding-top: 2.65em;
-  padding-bottom: 1.62em;
+  padding-top: 2.56em;
+  padding-bottom: 1.5em;
 }
 
 .card {
@@ -309,7 +310,7 @@
   margin-right: 0.625em;
   margin-bottom: 0.625em;
   cursor: pointer;
-  height: 9.5em;
+  height: 9.45em;
   width: 12.5em;
   display: flex;
   align-items: center;
@@ -355,7 +356,7 @@
   flex-direction: row;
   list-style: none;
   justify-content: space-between;
-  padding-bottom: 3em;
+  padding-bottom: 3.2em;
 }
 @media screen and (max-width: 860px) {
   .lots__card-list {
@@ -393,10 +394,9 @@
   font-size: 0.97em;
   font-weight: 300;
   line-height: 140%;
-  padding-bottom: 3.75em;
+  padding-bottom: 3.5em;
   color: #666465;
-  -moz-column-count: 2;
-  column-count: 2;
+
 }
 @media screen and (max-width: 680px) {
   .text_description {
@@ -410,29 +410,43 @@
   font-weight: 300;
   line-height: 150%;
   color: #666465;
+  width: 70%;
 }
 
+@media screen and (max-width: 680px) {
+  .text_description_item {
+    width: 100%;
+  }
+}
 .title_description_double {
   font-size: 1.1em;
   line-height: 140%;
   text-align: left;
-  padding-bottom: 0.6em;
   color: #666465;
   font-weight: 500;
 }
+
+@media screen and (max-width: 680px){
+  .title_description_double{
+    padding-bottom: 2em;
+    padding-top: 2em;
+
+  }
+}
 .description__card-list {
-  margin-top: 1em;
+  margin-top: 0.6em;
 }
 .description__card-list-item {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   gap: 3em;
-  padding-bottom: 2.34em;
+  padding-bottom: 2.55em;
 }
 @media screen and (max-width: 680px) {
   .description__card-list-item {
     flex-direction: column;
+    gap:0;
   }
 }
 
@@ -492,6 +506,14 @@
     overflow-x: scroll;
     padding-bottom: 20px;
   }
+}
+
+.content-section_news.pages{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 3.375em;
+  width: 100%;
 }
 
 .title_news_item {
@@ -558,7 +580,7 @@
   flex-wrap: wrap;
   .address__contact {
     padding-left: 3.375em;
-    padding-top: 1em;
+    padding-top: 2em;
   }
 }
 
@@ -717,7 +739,7 @@
 }
 
 .breadcrumbs {
-  padding: 1em 0em 1em 0em;
+  padding: 1.26em 0em 1.1em 0em;
   list-style: none;
 }
 
@@ -775,7 +797,6 @@
     display: flex;
     flex-direction: column;
     gap: 1em;
-    max-width: 80%;
   }
 }
 
@@ -795,6 +816,7 @@
   font-size: 1.1em;
   line-height: 140%;
   color: #90aec4;
+  padding-bottom: 4em;
 }
 
 .information_table {
@@ -806,8 +828,14 @@
   display: flex;
 }
 
+@media screen and (max-width: 680px) {
+  .left_menu {
+    display: none;
+  }
+}
+
 .left_menu {
-  width: 25%;
+  width: 30%;
   flex-shrink: 0;
 }
 
@@ -831,17 +859,41 @@
   padding-bottom: 3.938em;
 }
 
+@media screen and (max-width: 680px){
+  .table_over {
+    display: block;
+    width: 100%;
+  }
+
+  .table_over tr {
+      display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+  }
+
+  .table_over td {
+    display: block;
+    text-align: left;
+  }
+
+  .table_over th {
+    display: none;
+  }
+}
+
 .left_menu_link {
   display: flex;
   text-decoration: none;
   font-weight: 300;
-  font-size: 0.8em;
+  font-size:0.88em;
   line-height: 150%;
   color: #666465;
   background-color: rgba(144, 174, 196, 0.1);
   padding-left: 1em;
-  padding-top: 1em;
-  padding-bottom: 1em;
+  padding-top: 1.1em;
+  padding-bottom: 1.1em;
+  
 }
 
 .left__menu-item._active {
@@ -881,7 +933,7 @@
   border-bottom: 1px solid rgba(102, 100, 101, 0.5);
   padding-top: 1em;
   padding-bottom: 1em;
-  font-size: 0.8em;
+  font-size: 0.9em;
 }
 
 .table_row.blue {
@@ -964,6 +1016,17 @@
 
 .tab {
   padding-top: 0.9em;
+  padding-left: 1.5em;
+  padding-bottom: 3em;
+}
+
+@media screen and (max-width: 680px) {
+  .tab-nav{
+    display: flex;
+    flex-direction: row;
+  overflow-x: scroll; 
+  gap:1em;
+}
 }
 
 .tab-link {
@@ -1030,6 +1093,8 @@
   gap: 3.938em;
   padding-bottom: 3.938em;
 }
+
+
 .klients_pages {
   display: flex;
   flex-direction: column;
