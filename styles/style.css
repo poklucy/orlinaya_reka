@@ -583,6 +583,7 @@ h2.title_description {
   list-style: none;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   gap: 3.375em;
   width: 100%;
 }
@@ -1058,7 +1059,7 @@ display: none;
 
 .custom_table {
   width: 100%;
-  border-collapse: collapse;
+  /* border-collapse: collapse; */
   border-spacing: 1.75em 0em;
   margin-bottom: 2em;
   ul {
