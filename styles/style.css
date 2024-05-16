@@ -669,6 +669,10 @@ h2.title_description {
   }
 }
 
+.left-container{
+  max-width: calc(1200px/ 2);
+}
+
 @media screen and (max-width: 680px) {
   .contact .address__contact {
     padding-left: 20px;
@@ -1365,6 +1369,9 @@ display: none;
   transform: translateY(-50%);
 }
 }
+
+
+
 
 .clients_pages_second {
   display: flex;
