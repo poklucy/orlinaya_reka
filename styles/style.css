@@ -754,6 +754,7 @@ h2.title_description {
 .footer {
   padding: 2.3em 0 1.125em 0;
   background-color: #90aec41a;
+  flex: 0 0 auto;
 }
 .group_footer {
   .container {
