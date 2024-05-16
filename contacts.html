@@ -63,20 +63,24 @@
     <section class="contacts_pages">
       <section class="contact">
         <div class="address__contact">
-          <h2 class="title_news_item">ООО ИК «Орлиная река»
-          </h2>
+          <h1 class="title_contact" style="">ООО ИК «Орлиная река»
+          </h1>
           <p class="address">
             119146, г.Москва, ул. 1-я Фрунзенская, д.3а, стр.6
           </p>
           <address class="address_contact">
+            <div class="telephone_contacts">
             <a href="+74992428693" class="telephone">+7 (499) 242-86-93</a>
             <a href="+72992428696" class="telephone">+7 (499) 242-86-96</a>
+          </div>
             <a href="info@oreka.ru" class="email">info@oreka.ru</a>
-          </address>
-          <button class="button_contacts">
-            Связаться с нами </button>
+        </address>
+        <button class="button_contacts">
+          Связаться с нами </button>
         </div>
-        <img src="./images/maps.jpeg" class="maps_contact">
+        <div class="map_wrapper">
+          <img src="./images/pin.png" class="maps_contact">
+        </div>
       </section>
     </section>
     </main>
@@ -114,6 +118,26 @@
         </address>
         <p class="copyright">Copyright © 2024 "Орлиная река"</p>
       </div>
+      <div class="modal">
+        <p class="text_modal"> Вы можете написать свои вопросы, жалобы, обращения, пожелания!<br>Наши специалисты ответят Вам в ближайшее время.</p>
+        <div class="button_together">
+          <div class="button_window">
+            <input type="text" class="button" placeholder="Имя">
+            <input type="text" class="button" placeholder="Телефон">
+            <input type="text" class="button" placeholder="Тема обращения">
+      </div>
+      <input type="text" class="button" placeholder="Комментарий">
+      </div>
+      <div class="checkbox-wrapper">
+        <label for="modern-checkbox"></label>
+        <input type="checkbox" id="modern-checkbox">
+        <span>Подтверждаю, что я владелец указанного номера телефона</span>
+      </div>
+      <p class="assent_modal">Соглашаюсь с <a class="link">Политикой обработки Персональных данных</a></p>
+      <p class="invesment_modal staple">Добавить вложение</p>
+      <button class="button_contacts">
+        Отправить </button>
+    </div>
   </footer>
 </body>
 <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>

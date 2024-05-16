@@ -704,7 +704,7 @@ h2.title_description {
   padding-top: 1em;
 }
 .title_contact {
-  font-size: 1.5em;
+  font-size: 1.1em;
   line-height: 140%;
   font-weight: 700;
   color: #666465;
@@ -754,7 +754,6 @@ h2.title_description {
     width: 3.633em;
   }
 }
-
 
 .footer {
   padding: 2.3em 0 1.125em 0;
@@ -840,6 +839,56 @@ h2.title_description {
   text-align: left;
   color: #666465;
   width: 100%;
+}
+
+.modal{
+  height: 633px;
+  width: 828px;
+  background-color: #ffffff;
+  padding: 63px 28px ;
+}
+
+.button_window{
+  display: flex;
+  flex-direction: column;
+  gap:21px;
+}
+
+.button_together{
+  display: flex;
+  flex-direction: row;
+  padding-top: 42px;
+  gap:28px;
+  width: 100%;
+}
+.button{
+  background: rgba(144, 174, 196, 0.1);
+  border: 0cap;
+  font-weight: 300;
+font-size: 14px;
+line-height: 150%;
+color: #666465;
+padding-top: 22px;
+padding-bottom: 22px;
+padding-left: 16px;
+}
+
+.text_modal{
+  font-weight: 500;
+font-size: 18px;
+line-height: 140%;
+color: #666465;
+}
+
+.assent_modal{
+  font-weight: 300;
+font-size: 11px;
+line-height: 150%;
+color: #666465;
+}
+
+.invesment_modal{
+  
 }
 
 .breadcrumbs {
@@ -1298,6 +1347,21 @@ display: none;
   width: 10.75em;
   margin-top: 1.5em;
   margin-bottom: 3.938em;
+}
+.staple{
+.  position: relative;
+&:after {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 8px;
+  background: url(../images/arrow.svg) no-repeat;
+  background-size: contain;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
 }
 
 .clients_pages_second {
