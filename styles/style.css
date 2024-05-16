@@ -3,7 +3,9 @@ main {
 }
 .container {
   width: 100%;
+  max-width: 1200px;
   padding: 0 3.375em;
+  margin: auto;
 }
 @media screen and (max-width: 680px) {
   .container {
