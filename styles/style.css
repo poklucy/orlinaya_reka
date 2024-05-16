@@ -1,3 +1,6 @@
+main {
+  flex: 1 0 auto;
+}
 .container {
   width: 100%;
   padding: 0 3.375em;
@@ -70,6 +73,7 @@
   padding-bottom: 1.2em;
   padding-left: 0.8em;
   padding-right: 0.8em;
+  white-space: nowrap;
 }
 @media screen and (max-width: 980px) {
   .header__menu-list {
@@ -227,12 +231,12 @@
 .search {
   display: none;
   position: absolute;
-  background: #fff url(../images/search.svg) 0 50% no-repeat;
+  background: #fff url(../images/search.svg) 55px 50% no-repeat;
   height: 100%;
-  width: 90%;
+  width: 100%;
   right: 0;
   align-items: center;
-  padding-left: 30px;
+  padding-left: 80px;
 }
 .search.open {
   display: flex;
@@ -1020,9 +1024,28 @@ display: none;
   background-repeat: no-repeat;
   background-position: calc(100% - 1.438em) center;
 } */
-.data_inner{
-  background: url(../images/arrow.svg) no-repeat;
-  background-size: contain;
+.data_sort {
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 20px;
+    top: 50%;
+    left: 90%;
+    transform: translate(0%, -50%);
+    z-index: -1;
+    background: url(../images/arrow.svg) 90% 50% no-repeat;
+    background-size: 10px;
+  }
+}
+
+
+.data_sort.up {
+  &::after {
+    content: "";
+    transform: translate(0%, -50%) rotate(180deg);
+  }
 }
 
 .pointer {
