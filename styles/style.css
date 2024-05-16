@@ -401,7 +401,7 @@
   line-height: 150%;
   text-align: left;
   color: #666465;
-  padding-bottom: 0.95em;
+  padding-bottom: 1.15em;
   
   a {
     text-decoration: none;
@@ -413,17 +413,37 @@
 @media screen and (max-width: 680px) {
   .title_description {
     font-size: 24px;
+    margin-bottom: 1.2em;
   }
 }
+
+
 .text_description {
   /* text-align: justify; */
   gap: 3.25em;
   font-size: 0.97em;
   font-weight: 300;
   line-height: 140%;
-  padding-bottom: 3.5em;
+  padding-bottom: 3em;
   color: #666465;
 }
+
+.text_description_company{
+  margin-top: 0.65em;
+  gap: 3.25em;
+  font-size: 0.87em;
+  font-weight: 300;
+  line-height: 140%;
+  padding-bottom: 3em;
+  color: #666465;
+}
+
+.company{
+ margin-top: -2.8em;
+ margin-bottom: -1.5em;
+}
+
+
 @media screen and (max-width: 680px) {
   .text_description {
     -moz-column-count: 1;
@@ -438,7 +458,7 @@
   line-height: 150%;
   color: #666465;
   width: 70%;
-  padding-top: 0.3em;
+ padding-bottom: 0.6em;
 }
 
 @media screen and (max-width: 680px) {
@@ -465,11 +485,13 @@ h2.title_description {
   flex-direction: column;
 }
 
+
+
 .description__card-list-item {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  gap: 3.5em;
+  gap: 3.7em;
   padding-bottom: 2.1em;
    
 }
@@ -516,7 +538,7 @@ h2.title_description {
 }
 
 .description__card-list_text {
-  padding-bottom: 1em;
+  padding-bottom: 0.8em;
 }
 
 .news {
@@ -527,7 +549,7 @@ h2.title_description {
 }
 
 .title_news {
-  font-size: 1.5em;
+  font-size: 1.45em;
   font-weight: 700;
   line-height: 140%;
   padding-bottom: 1.2em;
@@ -597,7 +619,7 @@ h2.title_description {
   .content-section_news_accent {
     width: 100%;
     flex-shrink: 0;
-    border-top: 1px solid rgba(102, 100, 101, 0.5);
+    
   }
 }
 
@@ -637,13 +659,13 @@ h2.title_description {
   flex-wrap: wrap;
   .address__contact {
     padding-left: 3.375em;
-    padding-top: 1em;
   }
 }
 
 @media screen and (max-width: 680px) {
   .contact .address__contact {
     padding-left: 20px;
+    margin-top: 4em;
   }
 }
 
@@ -656,12 +678,11 @@ h2.title_description {
   line-height: 150%;
   color: #666465;
   font-weight: 300;
-  margin-bottom: 30px;
+  
 }
 .address_contact {
   display: flex;
   flex-direction: column;
-  gap: 0.3em;
   font-style: normal;
 }
 @media screen and (max-width: 680px) {
@@ -672,6 +693,11 @@ h2.title_description {
   }
 }
 
+.telephone_contacts{
+  display: flex;
+  flex-direction: column;
+  padding-top: 1em;
+}
 .title_contact {
   font-size: 1.5em;
   line-height: 140%;
@@ -692,6 +718,8 @@ h2.title_description {
   color: #90aec4;
   text-decoration: none;
   transition: all 0.3s ease-in;
+  font-size: 1.15em;
+  padding-top: 0.3em;
 }
 
 .email:hover {
@@ -707,18 +735,21 @@ h2.title_description {
 
 .maps_contact {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 33.5%;
+  left: 41%;
   height: 76px;
   width: 58.12px;
 }
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 680px){
   .maps_contact {
-    width: 100%;
-    height: auto;
-    margin-top: 30px;
+    position: absolute;
+    top: 33.5%;
+    left: 41%;
+    height: 4.75em;
+    width: 3.633em;
   }
 }
+
 
 .footer {
   padding: 2.3em 0 1.125em 0;
@@ -747,8 +778,8 @@ h2.title_description {
 .nav_footer {
   display: flex;
   flex-direction: row;
-  gap: 5vw;
-  margin-left: -2.25em;
+  gap:8em;
+  margin-left: -3em;
 }
 @media screen and (max-width: 860px) {
   .nav_footer {
@@ -861,7 +892,7 @@ h2.title_description {
   }
 }
 .about_bottom {
-  padding: 1.5em 0 3.938em 0;
+  padding: 3.8em 0 3em 0;
   .container {
     display: flex;
     flex-direction: column;
