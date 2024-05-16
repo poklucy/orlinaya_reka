@@ -850,10 +850,16 @@ h2.title_description {
 }
 
 .modal{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   height: 633px;
-  width: 828px;
+  max-width: 828px;
   background-color: #ffffff;
-  padding: 63px 28px ;
+  box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.25);
+  padding: 63px 28px;
+  z-index: 10;
 }
 
 .button_window{
@@ -1357,7 +1363,7 @@ display: none;
   margin-bottom: 3.938em;
 }
 .staple{
-.  position: relative;positionpositionposition
+.  position: relative;positionpositionpositionpositionpositionpositionpositionpositionposition
 &:after {
   content: "";
   display: block;
