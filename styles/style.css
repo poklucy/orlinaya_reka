@@ -670,7 +670,9 @@ h2.title_description {
 }
 
 .left-container{
-  max-width: calc(1200px/ 2);
+  width: 50%;
+  max-width: calc(1200px / 2);
+  margin-left: auto;
 }
 
 @media screen and (max-width: 680px) {
@@ -1355,7 +1357,7 @@ display: none;
   margin-bottom: 3.938em;
 }
 .staple{
-.  position: relative;
+.  position: relative;positionpositionposition
 &:after {
   content: "";
   display: block;
