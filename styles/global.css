@@ -10,6 +10,7 @@ body {
   height: 100%;
 }
 body {
+  width: 1200px;
   font-family:'Muller';
   display: flex;
   flex-direction: column;
