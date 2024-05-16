@@ -8,10 +8,9 @@
 html,
 body {
   height: 100%;
-  width: 1200px;
 }
 body {
-  width: 1200px;
+  width: 100%;
   font-family:'Muller';
   display: flex;
   flex-direction: column;
