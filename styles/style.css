@@ -1209,6 +1209,7 @@ h2.title_description {
 .table_over {
   margin-top: -3.5em;
   padding-bottom: 3.938em;
+  padding-left: calc(var(--padding) / 2);
   
 }
 
