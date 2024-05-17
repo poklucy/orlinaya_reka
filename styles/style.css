@@ -1212,7 +1212,7 @@ h2.title_description {
 }
 
 .table_over {
-  margin-top: -40px;
+  margin-top: -50px;
   padding-bottom: 3.938em;
   padding-left: calc(var(--padding) / 2);
   flex-grow: 1;
@@ -1318,13 +1318,14 @@ h2.title_description {
 
 .custom_table thead th {
   border-bottom: 1px solid rgba(102, 100, 101, 0.5);
-  padding-top: 1em;
-  padding-bottom: 1em;
+  /* padding-top: 1em;
+  padding-bottom: 1em; */
   font-size: 0.8em;
   text-align: left;
   font-weight: normal;
   color: var(--accent-color);
   min-width: 200px;
+  height: 50px;
 }
 
 .custom_table .inner-table {
