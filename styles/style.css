@@ -542,7 +542,7 @@ h2.title_description {
 }
 
 .description__card-list_text {
-  padding-bottom: 0.8em;
+  padding-bottom: 1em;
 }
 
 .news {
@@ -553,14 +553,14 @@ h2.title_description {
 }
 
 .news_text {
-  margin-top: 25px;
-  margin-bottom: 63px;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 .title_news {
   font-size: 1.45em;
   font-weight: 700;
   line-height: 140%;
-  padding-bottom: 1.2em;
+  padding-bottom: 1em;
   color: #666465;
 }
 
@@ -617,7 +617,6 @@ h2.title_description {
 .content-section_news_accent {
   display: flex;
   flex-direction: column;
-  gap: 0.9em;
   width: calc((100% / 3) - (0.9 * 3em));
 }
 
@@ -718,7 +717,7 @@ h2.title_description {
   padding-top: 1em;
 }
 .title_contact {
-  font-size: 1.1em;
+  font-size: 1.5em;
   line-height: 140%;
   font-weight: 700;
   color: #666465;
