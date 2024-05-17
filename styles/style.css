@@ -422,7 +422,6 @@ main {
 @media screen and (max-width: 680px) {
   .title_description {
     font-size: 24px;
-    margin-bottom: 1.2em;
   }
 }
 
@@ -446,9 +445,14 @@ main {
   color: #666465;
 }
 
+
 .company {
   margin-top: -2.8em;
   margin-bottom: -1.5em;
+}
+
+.company_padding{
+  margin-bottom: 4em;
 }
 
 @media screen and (max-width: 680px) {
@@ -1146,7 +1150,7 @@ h2.title_description {
 }
 
 .left_menu {
-  width: 28%;
+  width: 27%;
   flex-shrink: 0;
 }
 
@@ -1159,7 +1163,6 @@ h2.title_description {
 }
 
 .menu {
-  padding-left: var(--padding);
   display: flex;
   list-style: none;
   gap: 0.25em;
@@ -1188,8 +1191,7 @@ h2.title_description {
 .table_over {
   margin-top: -3.5em;
   padding-bottom: 3.938em;
-  padding-left: 28px;
-  padding-right: var(--padding);
+  
 }
 
 .left_menu_link {
@@ -1310,6 +1312,7 @@ h2.title_description {
 }
 .custom_table .inner-table td p {
   margin-bottom: 20px;
+  margin-right: 20px;
 }
 
 .table_head td {
