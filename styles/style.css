@@ -398,6 +398,7 @@ main {
 
 .lost_link:hover {
   color: #666465;
+  text-decoration: none;
 }
 
 .columns {
@@ -450,9 +451,10 @@ main {
   margin-top: -2.8em;
   margin-bottom: -1.5em;
 }
-
+@media screen and (max-width: 680px) {
 .company_padding{
   margin-bottom: 4em;
+}
 }
 
 @media screen and (max-width: 680px) {
