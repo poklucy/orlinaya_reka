@@ -1231,7 +1231,7 @@ h2.title_description {
   padding-bottom: 1.1em;
 }
 
-.left__menu-item._active {
+.left__menu-item._active .left_menu_link {
   background: rgba(144, 174, 196, 0.3);
 }
 .left__menu-item._active .left__menu-link,
@@ -1239,8 +1239,9 @@ h2.title_description {
   color: #fff;
 }
 
-.left__menu-item.has_inner {
+.left__menu-item .dropdown-link {
   position: relative;
+  
   &:after {
     content: "";
     display: block;
@@ -1252,6 +1253,12 @@ h2.title_description {
     right: 10px;
     top: 50%;
     transform: translateY(-50%);
+  }
+}
+
+.left__menu-item .dropdown-link.active {
+  &:after {
+    transform: translateY(-50%) rotate(180deg);
   }
 }
 
@@ -1318,8 +1325,6 @@ h2.title_description {
 
 .custom_table thead th {
   border-bottom: 1px solid rgba(102, 100, 101, 0.5);
-  /* padding-top: 1em;
-  padding-bottom: 1em; */
   font-size: 0.8em;
   text-align: left;
   font-weight: normal;
@@ -1462,6 +1467,7 @@ h2.title_description {
   line-height: 150%;
   color: #666465;
 }
+.clients_pages,
 .part_pages {
   padding-left: calc(var(--padding) / 2);
 
@@ -1533,13 +1539,14 @@ h2.title_description {
   padding: 1.5em 1.5em;
   width: 172px;
   white-space: nowrap;
+  cursor: pointer;
 }
 
 .clients_pages {
   display: flex;
   flex-direction: column;
   padding-left: 1.75em;
-  padding-right: var(--padding);
+  /* padding-right: var(--padding); */
   padding-bottom: 3.938em;
 }
 
@@ -1594,11 +1601,13 @@ h2.title_description {
 .btn {
   color: #666465;
   background-color: rgba(144, 174, 196, 0.3);
-  border: 0cap;
+  border: 0;
   padding: 1.5em 1.5em;
-  width: 12.875em;
+  width: 172px;
+  white-space: nowrap;
   margin-top: 1.5em;
-  /* margin-bottom: 3.938em; */
+  font-size: 14px;
+  text-decoration: none;
   cursor: pointer;
   &:hover {
     background: var(--accent-color);
