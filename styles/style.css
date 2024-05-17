@@ -1,5 +1,5 @@
 :root {
-  --min-width: 1200px;
+  --max-width: 1200px;
   --accent-color: #90aec4;
   --padding:  3.375em;
 }
@@ -13,7 +13,7 @@ p {
 }
 .container {
   width: 100%;
-  max-width: var(--min-width);
+  max-width: var(--max-width);
   padding: 0 var(--padding);
   margin: auto;
 }
@@ -83,6 +83,7 @@ p {
   font-size: 0.74em;
   font-weight: 400;
   line-height: 140%;
+  margin-right: 29px;
 }
 
 .header__menu-item {
@@ -604,6 +605,7 @@ h2.title_description {
   flex-wrap: wrap;
   gap: var(--padding);
   width: 100%;
+  margin-bottom: 63px;
 }
 
 @media screen and (max-width: 680px) {
@@ -688,7 +690,7 @@ h2.title_description {
 
 .left-container {
   width: 50%;
-  max-width: calc(var(--min-width) / 2);
+  max-width: calc(var(--max-width) / 2);
   margin-left: auto;
   @media screen and (max-width: 680px) {
    width: 100%;
@@ -1144,7 +1146,9 @@ h2.title_description {
 .pdf_file {
   display: flex;
   align-items: center;
-  gap: 12px
+  gap: 12px;
+  margin-top: 24px;
+  margin-bottom: 24px;
 }
 
 .pdf_icon{
@@ -1157,7 +1161,7 @@ h2.title_description {
   font-size: 1.1em;
   line-height: 140%;
   color: var(--accent-color);
-  padding-bottom: 4em;
+  padding-bottom: 77px;
 }
 
 .information_table {
@@ -1207,9 +1211,10 @@ h2.title_description {
 }
 
 .table_over {
-  margin-top: -3.5em;
+  margin-top: -40px;
   padding-bottom: 3.938em;
   padding-left: calc(var(--padding) / 2);
+  flex-grow: 1;
   
 }
 
@@ -1282,12 +1287,9 @@ h2.title_description {
 }
 
 .custom_table {
-  width: calc(100% + 3em);
-  /* border-collapse: collapse; */
+  width: 100%;
   border-spacing: calc(var(--padding) / 2) 0em;
   margin-bottom: 2em;
-  margin-left: calc(-1 * (var(--padding) / 2));
-
   ul {
     padding-left: 20px;
   }
@@ -1458,13 +1460,16 @@ h2.title_description {
   font-size: 0.8em;
   line-height: 150%;
   color: #666465;
-  /*  */
+
 }
 .part_pages {
-  padding-left: 1.75em;
-  .tab {
-    margin-bottom: 30px;
+  padding-left: calc(var(--padding) / 2);
+
+  .custom_table {
+    width: calc(100% + (var(--padding)));
+    margin-left: calc(-1 * (var(--padding) / 2)); 
   }
+
 }
 .tab {
   padding-top: 0.9em;
@@ -1553,8 +1558,7 @@ h2.title_description {
   padding-top: 2.625em;
   display: flex;
   flex-direction: column;
-  gap: 3.938em;
-  /* padding-bottom: 3.938em; */
+  /* gap: 3.938em; */
 }
 
 
@@ -1566,7 +1570,7 @@ h2.title_description {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: start;
+  align-items: flex-start;
   gap: 75px;
 }
 
@@ -1613,4 +1617,4 @@ h2.title_description {
 
 .last{
   border-bottom: 1px solid rgba(102, 100, 101, 0.5);
-}}
+}}}
