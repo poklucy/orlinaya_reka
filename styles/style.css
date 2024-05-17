@@ -1566,3 +1566,16 @@ h2.title_description {
     color: #fff;
   }
 }
+
+.result{
+  display: flex;
+  flex-direction: column;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  border-top: 1px solid rgba(102, 100, 101, 0.5);
+  gap:1em;
+}
+
+.last{
+  border-bottom: 1px solid rgba(102, 100, 101, 0.5);
+}
