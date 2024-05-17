@@ -109,10 +109,11 @@ p {
     justify-content: flex-start;
     align-items: flex-start;
     padding: 20px;
-    background: #fff;
+    background: #fff url(../images/shadow.jpg) repeat-x;
     width: 100%;
     gap: 0;
     border-top: 1px solid rgba(102, 100, 101, 0.5);
+
   }
   .header__menu-item {
     padding: 0;
@@ -210,7 +211,7 @@ p {
   font-size: 0;
   background: rgba(144, 174, 196, 0.3) url(../images/search.svg) 50% 50%
     no-repeat;
-  margin-left: 29px;
+  /* margin-left: 29px; */
 }
 @media screen and (max-width: 980px) {
   .search_btn-open {
