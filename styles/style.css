@@ -386,6 +386,7 @@ p {
   font-size: 1.15em;
   line-height: 140%;
   color: #ffffff;
+  text-align: center;
 }
 
 @media screen and (max-width: 680px) {
@@ -947,8 +948,8 @@ h2.title_description {
 }
 .modal_close {
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 70px;
+  right: 40px;
   width: 16px;
   height: 16px;
   display: block;
