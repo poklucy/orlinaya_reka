@@ -80,6 +80,12 @@ text-decoration: none;
   align-items: center;
   justify-content: flex-end;
 }
+
+@media screen and (max-width: 680px) {
+  .header{
+    box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.25);
+  }
+}
 @media screen and (max-width: 680px) {
   .header .main-nav {
     position: static;
@@ -155,6 +161,11 @@ text-decoration: none;
   color: #fff;
 }
 
+@media screen and (max-width: 980px) {
+  .header__menu-link{
+   padding: 0.6em;
+  }  
+}
 .main-nav__toggle {
   display: none;
   background: transparent;
@@ -364,6 +375,7 @@ text-decoration: none;
   .card {
     width: 100%;
     height: auto;
+    padding: 18px;
   }
   .card span {
     display: unset;
@@ -405,6 +417,7 @@ text-decoration: none;
 @media screen and (max-width: 860px) {
   .lots__card-list {
     flex-direction: column;
+    padding-bottom: 35px;
   }
 }
 
@@ -418,6 +431,12 @@ text-decoration: none;
   color: var(--accent-color);
   padding-bottom: 2.6em;
   transition: all 0.3s ease-in;
+}
+
+@media screen and (max-width: 860px) {
+  .lost_link{
+    font-size: 14px;
+  }
 }
 
 .lost_link:hover {
@@ -633,6 +652,12 @@ h2.title_description {
   color: #666465;
 }
 
+@media screen and (max-width: 680px) {
+  .title_news_item {
+    font-size:16px;
+  }
+}
+
 .intro__date {
   font-family: "Inter";
   font-size: 0.85em;
@@ -833,6 +858,13 @@ h2.title_description {
 .logo_footer {
   width: 16.396em;
   height: 3em;
+}
+
+@media screen and (max-width: 860px) {
+  .logo_footer{
+    width: 220px;
+    height: 30px;
+  }
 }
 
 .nav_footer {
