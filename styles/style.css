@@ -918,6 +918,26 @@ h2.title_description {
     background: url(../images/close_hover.svg) 50% 50% no-repeat;
   }
 }
+
+.modal_cookie{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  
+    /* height: 633px; */
+    max-width: 703px;
+    background-color: #ffffff;
+    box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.25);
+    padding: 48px 61px 31px 61px;
+    z-index: 10;
+    @media screen and (max-width: 680px) {
+      width: 100%;
+      top: 0;
+      left: 0;
+      transform: unset;
+    }
+  }
+
 .modal-title {
   font-weight: 500;
   font-size: 18px;
