@@ -1472,6 +1472,11 @@ h2.title_description {
   text-decoration-skip-ink: none;
   color: var(--accent-color);
 }
+
+.link_table:hover{
+  text-decoration: none;
+}
+
 .under_table {
   display: flex;
   flex-direction: column;
@@ -1803,6 +1808,9 @@ h2.title_description {
     width: 10px;
     height: 20px;
     flex-shrink: 0;
+  }
+  .control:hover{
+    background: url(../images/arrow-back_blue.svg) no-repeat;
   }
   .disabled {
     opacity: 0.3;
