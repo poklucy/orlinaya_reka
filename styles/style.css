@@ -28,6 +28,7 @@ p {
   }
 }
 
+
 .text{
   font-weight: 300;
 font-size: 14px;
@@ -1825,4 +1826,11 @@ color: #666465;
     text-transform: uppercase;
     cursor: pointer;
   }
+}
+
+::placeholder{
+  font-weight: 300;
+font-size: 14px;
+line-height: 150%;
+color: #666465;
 }
