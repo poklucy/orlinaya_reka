@@ -928,7 +928,7 @@ h2.title_description {
 }
 
 .modal_cookie{
-    position: absolute;
+    position: fixed;
     bottom: 0;
     right: 0;
   
@@ -1658,12 +1658,23 @@ h2.title_description {
   font-size: 14px;
   text-decoration: none;
   cursor: pointer;
+  text-align: center;
   &:hover {
     background: var(--accent-color);
     color: #fff;
   }
 }
 
+.count{
+  font-weight: 300;
+font-size: 10px;
+line-height: 150%;
+color: #666465;
+}
+
+.count:hover{
+  color: #90aec4;
+}
 .result_item {
   display: flex;
   flex-direction: column;
@@ -1785,6 +1796,7 @@ h2.title_description {
   width: 100%;
   display: flex;
   align-items: center;
+  gap:0.3em;
   margin-bottom: 23px;
  
   input[type="text"] {
