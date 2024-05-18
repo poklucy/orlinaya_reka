@@ -28,6 +28,12 @@ p {
   }
 }
 
+.text{
+  font-weight: 300;
+font-size: 14px;
+line-height: 150%;
+color: #666465;
+}
 .header {
   position: -webkit-sticky;
   position: sticky;
