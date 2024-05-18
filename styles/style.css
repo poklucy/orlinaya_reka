@@ -1192,6 +1192,9 @@ h2.title_description {
     fill: white;
   }
   &:hover {
+   
+      color: #90aec4;
+    
     .st0 {
       fill: rgba(144, 174, 196, 0.3);
     }
@@ -1406,8 +1409,9 @@ h2.title_description {
   .table_over {
     display: block;
     width: 100%;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 0;
+    /* padding-left: 20px;
+    padding-right: 20px; */
   }
   .table_row {
     padding: 0;
@@ -1423,6 +1427,10 @@ h2.title_description {
   }
   .table_over th {
     display: none;
+  }
+  .custom_table {
+    border-collapse: collapse;
+    border-spacing: 0;
   }
   .custom_table td {
     width: 100%;
