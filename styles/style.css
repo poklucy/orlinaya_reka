@@ -991,13 +991,18 @@ h2.title_description {
     display: flex;
     gap: 28px 21px;
     @media screen and (max-width: 680px) {
-      display: block;
+      flex-direction: column;
+      gap: unset;
+      &:last-child {
+        flex-direction: column-reverse;
+      }
     }
   }
   .form-col {
     width: 50%;
     @media screen and (max-width: 680px) {
       width: 100%;
+      margin-bottom: 20px;
     }
   }
   .form-row + .form-row {
@@ -1039,7 +1044,9 @@ h2.title_description {
       color: #666465;
     }
   }
-
+.send-btn {
+  margin-top: 20px;
+}
   .custom-checkbox .checkbox {
     margin-right: 10px;
   }
@@ -1129,6 +1136,9 @@ h2.title_description {
     padding: 10px 20px;
     background: url(../images/attach.svg) no-repeat;
     padding-left: 60px;
+    @media screen and (max-width: 680px) {
+      margin-top: unset;
+    }
     label {
       font-size: 11px;
       color: #666465;
@@ -1420,7 +1430,7 @@ h2.title_description {
   text-align: left;
   font-weight: normal;
   color: var(--accent-color);
-  min-width: 200px;
+  /* min-width: 200px; */
   height: 50px;
 }
 
