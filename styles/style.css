@@ -1252,6 +1252,12 @@ h2.title_description {
   padding-bottom: 77px;
 }
 
+@media screen and (max-width: 680px) {
+  .subtitle{
+    padding-bottom: 0px;
+  }
+}
+
 .information_table {
   display: flex;
   gap: 1.563em;
@@ -1551,6 +1557,13 @@ h2.title_description {
   width: 100%;
 }
 
+@media screen and (max-width: 680px) {
+  .under_table {
+    gap: 10px;
+    padding-top: 0;
+  }
+}
+
 .text_description_information {
   font-weight: 300;
   font-size: 0.8em;
@@ -1638,6 +1651,11 @@ h2.title_description {
   padding-left: 1.75em;
   /* padding-right: var(--padding); */
   padding-bottom: 3.938em;
+}
+@media screen and (max-width: 680px){
+  .clients_pages{
+    padding-left:3px;
+  }
 }
 
 .news_pages {
