@@ -1186,12 +1186,27 @@ h2.title_description {
   gap: 12px;
   margin-top: 24px;
   margin-bottom: 24px;
+  text-decoration: none;
+  color: #666465;
+  .st0 {
+    fill: white;
+  }
+  &:hover {
+    .st0 {
+      fill: rgba(144, 174, 196, 0.3);
+    }
+    .st2 {
+      stroke: rgba(144, 174, 196, 0.3);
+    }
+  }
 }
 
 .pdf_icon {
   height: 42px;
   width: 32px;
 }
+
+
 
 .subtitle {
   font-weight: 500;
