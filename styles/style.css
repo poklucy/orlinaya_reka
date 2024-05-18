@@ -1299,11 +1299,14 @@ h2.title_description {
   }
 }
 
-.table_over {
-  margin-top: -50px;
+.table_wrapper {
   padding-bottom: 3.938em;
   padding-left: calc(var(--padding) / 2);
   flex-grow: 1;
+}
+
+.upper {
+  margin-top: -50px;
 }
 
 .left_menu_link {
@@ -1441,83 +1444,6 @@ h2.title_description {
   border-bottom: 1px solid rgba(102, 100, 101, 0.5);
 }
 
-@media screen and (max-width: 680px) {
-  .table_over {
-    display: block;
-    width: 100%;
-    padding: 0;
-    /* padding-left: 20px;
-    padding-right: 20px; */
-  }
-  .table_row {
-    padding: 0;
-  }
-  .table_over tr {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  .table_over td {
-    display: block;
-    text-align: left;
-  }
-  .table_over th {
-    display: none;
-  }
-  .custom_table {
-    border-collapse: collapse;
-    border-spacing: 0;
-  }
-  .custom_table td {
-    width: 100%;
-  }
-  .custom_table td {
-    border: none;
-  }
-  .custom_table tr {
-    border-bottom: 1px solid rgba(102, 100, 101, 0.5);
-    padding-bottom: 20px;
-    padding-top: 10px;
-  }
-  .inner-table tr {
-    border-bottom: none;
-    padding-bottom: 0;
-  }
-  .custom_table td:before {
-    display: block;
-    content: attr(data-label);
-    color: var(--accent-color);
-  }
-  .custom_table .inner-table td p {
-    margin-bottom: 0;
-  }
-  .custom_table thead tr,
-  .custom_table thead th {
-    padding: 0;
-    margin: 0;
-    border: none;
-  }
-  .mob_table-title {
-    display: inline-block;
-    font-size: 12px;
-    background: #f5f7f9 url(../images/arrow-left.svg) 10px 50% no-repeat;
-    padding: 10px 40px;
-    margin-left: -20px;
-    margin-bottom: 36px;
-    a {
-      text-decoration: none;
-      color: #666465;
-      pointer-events: all;
-    }
-  }
-
-  .subtitle {
-    font-size: 14px;
-    font-weight: 500;
-    margin-bottom: 24px;
-  }
-}
-
 .table_title {
   text-align: left;
 }
@@ -1570,7 +1496,6 @@ h2.title_description {
 .clients_pages,
 .part_pages {
   padding-left: calc(var(--padding) / 2);
-
   .custom_table {
     width: calc(100% + (var(--padding)));
     margin-left: calc(-1 * (var(--padding) / 2));
@@ -1651,9 +1576,92 @@ h2.title_description {
 }
 @media screen and (max-width: 680px){
   .clients_pages{
-    padding-left:3px;
+    padding-left: unset;
+    /* padding-left:3px; */
   }
 }
+
+@media screen and (max-width: 680px) {
+  .table_wrapper {
+    display: block;
+    width: 100%;
+    padding: 0;
+  }
+  .upper {
+    margin-top: unset;
+  }
+  .table_row {
+    padding: 0;
+  }
+  .custom_table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100% !important;
+    margin-left: unset !important;
+  }
+  .custom_table tr {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .custom_table td {
+    display: block;
+    text-align: left;
+  }
+  .custom_table th {
+    display: none;
+  }
+
+  .custom_table td {
+    width: 100%;
+  }
+  .custom_table td {
+    border: none;
+  }
+  .custom_table tr {
+    border-bottom: 1px solid rgba(102, 100, 101, 0.5);
+    padding-bottom: 20px;
+    padding-top: 10px;
+  }
+  .inner-table tr {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+  .custom_table td:before {
+    display: block;
+    content: attr(data-label);
+    color: var(--accent-color);
+  }
+  .custom_table .inner-table td p {
+    margin-bottom: 0;
+  }
+  .custom_table thead tr,
+  .custom_table thead th {
+    padding: 0;
+    margin: 0;
+    border: none;
+  }
+  .mob_table-title {
+    display: inline-block;
+    font-size: 12px;
+    background: #f5f7f9 url(../images/arrow-left.svg) 10px 50% no-repeat;
+    padding: 10px 40px;
+    margin-left: -20px;
+    margin-bottom: 36px;
+    a {
+      text-decoration: none;
+      color: #666465;
+      pointer-events: all;
+    }
+  }
+
+  .subtitle {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 24px;
+  }
+}
+
 
 .news_pages {
   border-top: 1px solid rgba(102, 100, 101, 0.5);
@@ -1710,7 +1718,7 @@ h2.title_description {
   padding: 1.5em 1.5em;
   width: 172px;
   white-space: nowrap;
-  margin-top: 1.5em;
+  /* margin-top: 1.5em; */
   font-size: 14px;
   text-decoration: none;
   cursor: pointer;
@@ -1756,11 +1764,22 @@ h2.title_description {
     justify-content: center;
     margin-left: auto;
   }
+  @media screen and (max-width: 680px) {
+    &:before {
+      display: none;
+    }
+    .button {
+      margin-left: 0;
+      justify-content: flex-start;
+    }
+  }
 }
+
+
 .paging {
   margin-left: auto;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   width: calc(100% / 3);
 }
 .pages_list {
