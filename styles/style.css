@@ -1814,13 +1814,14 @@ h2.title_description {
     font-size: 0;
     display: block;
     background: url(../images/arrow-back.svg) no-repeat;
-    background-size: 100%;
+    background-size: 100% 100%;
     width: 10px;
     height: 20px;
     flex-shrink: 0;
   }
   .control:hover{
     background: url(../images/arrow-back_blue.svg) no-repeat;
+    background-size: 100% 100%;
   }
   .disabled {
     opacity: 0.3;
