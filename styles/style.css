@@ -1727,6 +1727,8 @@ h2.title_description {
 @media screen and (max-width: 680px){
   .news_pages_item {
     flex-direction: column;
+    gap:0;
+    padding-bottom: 2em;
   }
 }
 
