@@ -171,8 +171,15 @@ p {
 }
 
 @media screen and (max-width: 980px) {
+  .header__menu-item._active {
+    background: unset;
+    .header__menu-link{
+      color: #90aec4;
+    }
+  }
   .header__menu-link{
    padding: 0.6em;
+  
   }  
 }
 .main-nav__toggle {
@@ -1560,7 +1567,7 @@ h2.title_description {
   color: #666465;
   background-color: #f4f7f9;
   text-align: center;
-  display: flex;
+  display: inline-flex;
   align-items: center;
 }
 
@@ -1570,6 +1577,9 @@ h2.title_description {
 }
 
 @media screen and (max-width: 680px){
+  .tab {
+    margin-right: -20px;
+  }
   .tab-link{
     padding-top: 0.5em;
     padding-bottom: 0.5em;
@@ -1578,9 +1588,7 @@ h2.title_description {
 .border {
   border-color: (#666465, 0.5);
   height: 1px;
-  /* margin-left: 1.75em; */
   margin-bottom: 2em;
-  /* margin-right: var(--padding); */
 }
 
 .clients_pages {
@@ -1618,7 +1626,6 @@ h2.title_description {
 @media screen and (max-width: 680px){
   .clients_pages{
     padding-left: unset;
-    /* padding-left:3px; */
   }
 }
 
@@ -1652,6 +1659,16 @@ h2.title_description {
   .custom_table th {
     display: none;
   }
+  .custom_table td[data-label="Документ"]:before {
+    border-bottom: 1px solid rgba(102, 100, 101, 0.5);
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+  }
+
+  .custom_table tr:not(:first-child) td[data-label="Документ"] {
+    display: none;
+  }
+
 
   .custom_table td {
     width: 100%;
@@ -1815,7 +1832,7 @@ h2.title_description {
   justify-content: center;
   margin-top: 42px;
   margin-bottom: 63px;
-  margin-right: 54px;
+  /* margin-right: 54px; */
   position: relative;
   gap: 18.5em;
   &:before {
@@ -2013,7 +2030,11 @@ h2.title_description {
 
 .toggle {
   text-decoration: none;
+  display: block;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 .hide {
   display: none;
+  margin-bottom: 10px !important;
 }
