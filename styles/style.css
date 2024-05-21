@@ -1556,10 +1556,12 @@ h2.title_description {
   padding-top: 1em;
   padding-bottom: 1em;
   padding-right: 3em;
-  line-height: 150%;
+  line-height: 1.25;
   color: #666465;
   background-color: #f4f7f9;
   text-align: center;
+  display: flex;
+  align-items: center;
 }
 
 .tab-link.active,
