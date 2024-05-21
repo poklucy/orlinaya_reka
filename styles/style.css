@@ -2007,3 +2007,11 @@ h2.title_description {
   color: #666465;
   font-family: "Muller" serif;
 }
+
+
+.toggle {
+  text-decoration: none;
+}
+.hide {
+  display: none;
+}
