@@ -131,3 +131,8 @@ function closeAllSelect(elmnt) {
 }
 
 document.addEventListener("click", closeAllSelect);
+
+
+$('.toggle').click(function(){
+  $(this).next('.hide').slideToggle(200);
+});
