@@ -27,6 +27,16 @@ p {
     padding: 0 20px;
   }
 }
+.mb{
+  margin-top: 5em;
+}
+
+@media screen and (max-width: 680px){
+  .mb{
+    margin-top: 0em;
+      margin-bottom: 3em;
+  } 
+}
 
 .text {
   font-weight: 300;
@@ -617,6 +627,7 @@ h2.title_description {
   display: flex;
   flex-direction: row;
   gap: var(--padding);
+  justify-content: space-between;
   width: 100%;
   /* flex-wrap: wrap; */
   /* padding-left: 3.375em; */
@@ -948,7 +959,7 @@ h2.title_description {
 }
 .modal_close {
   position: absolute;
-  top: 70px;
+  
   right: 40px;
   width: 16px;
   height: 16px;
@@ -1311,7 +1322,7 @@ h2.title_description {
 }
 
 .table_wrapper {
-  padding-bottom: 3.938em;
+ 
   padding-left: calc(var(--padding) / 2);
   flex-grow: 1;
 }
@@ -1331,6 +1342,9 @@ h2.title_description {
   padding-left: 1em;
   padding-top: 1.1em;
   padding-bottom: 1.1em;
+}
+.left_menu_link:hover{
+   background-color: rgba(144, 174, 196, 0.3);
 }
 
 .left__menu-item._active .left_menu_link {
@@ -1384,6 +1398,7 @@ h2.title_description {
   &::after {
     content: "";
     transform: translate(0%, -50%) rotate(180deg);
+    padding-left: 6em;
   }
 }
 
@@ -1445,6 +1460,7 @@ h2.title_description {
   margin-bottom: 20px;
   margin-right: 20px;
   text-align: left;
+  
 }
 
 .table_head td {
@@ -1543,6 +1559,7 @@ h2.title_description {
   line-height: 150%;
   color: #666465;
   background-color: #f4f7f9;
+  text-align: center;
 }
 
 .tab-link.active,
@@ -1550,6 +1567,12 @@ h2.title_description {
   background-color: rgba(144, 174, 196, 0.3);
 }
 
+@media screen and (max-width: 680px){
+  .tab-link{
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+  }
+}
 .border {
   border-color: (#666465, 0.5);
   height: 1px;
@@ -1569,8 +1592,8 @@ h2.title_description {
   line-height: 150%;
   color: #666465;
   gap: 1em;
-  /* padding-right: var(--padding); */
-  margin-bottom: 30px;
+  padding-right: var(--padding);
+  margin-bottom: 3em;
 }
 
 .button_next {
@@ -1650,6 +1673,7 @@ h2.title_description {
   }
   .custom_table .inner-table td p {
     margin-bottom: 0;
+    
   }
   .custom_table thead tr,
   .custom_table thead th {
@@ -1698,6 +1722,12 @@ h2.title_description {
   justify-content: space-between;
   align-items: flex-start;
   gap: 75px;
+}
+
+@media screen and (max-width: 680px){
+  .news_pages_item {
+    flex-direction: column;
+  }
 }
 
 .link_news_item {
@@ -1755,13 +1785,24 @@ h2.title_description {
 .count:hover {
   color: #90aec4;
 }
-.result_item {
+
+.column{
   display: flex;
   flex-direction: column;
+  gap: 1em;
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.result_item {
   padding-top: 2em;
   padding-bottom: 2em;
   border-bottom: 1px solid rgba(102, 100, 101, 0.5);
-  gap: 1em;
+  
 }
 
 .button_pages {
@@ -1770,13 +1811,14 @@ h2.title_description {
   justify-content: center;
   margin-top: 42px;
   margin-bottom: 63px;
+  margin-right: 54px;
   position: relative;
+  gap: 18.5em;
   &:before {
     content: "";
     width: calc(100% / 3);
   }
   .button {
-    width: calc(100% / 3);
     justify-content: center;
     margin-left: auto;
   }
@@ -1788,9 +1830,15 @@ h2.title_description {
       margin-left: 0;
       justify-content: flex-start;
     }
+  
   }
 }
 
+@media screen and (max-width: 680px){
+  .button_pages {
+    gap: 3em;
+  }
+}
 
 .paging {
   margin-left: auto;
@@ -1855,6 +1903,14 @@ h2.title_description {
   display: flex;
   flex-direction: row;
   gap: 5em;
+}
+
+@media screen and (max-width: 680px){
+  .cookie {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
 }
 
 .link_grey {
