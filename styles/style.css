@@ -975,8 +975,8 @@ h2.title_description {
 }
 .modal_close {
   position: absolute;
-  
-  right: 40px;
+  top: 40px;
+  right:40px;
   width: 16px;
   height: 16px;
   display: block;
@@ -991,8 +991,6 @@ h2.title_description {
   position: fixed;
   bottom: 0;
   right: 0;
-
-  /* height: 633px; */
   max-width: 703px;
   background-color: #ffffff;
   box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.25);
@@ -1011,6 +1009,7 @@ h2.title_description {
   font-size: 18px;
   line-height: 140%;
   color: #666465;
+  margin-right: 40px;
   margin-bottom: 42px;
 }
 
