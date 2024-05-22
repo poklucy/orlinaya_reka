@@ -40,7 +40,7 @@ p {
 
 .text {
   font-weight: 300;
-  font-size: 14px;
+  font-size: 0.875em;
   line-height: 150%;
   color: #666465;
 }
@@ -408,7 +408,7 @@ p {
 
 @media screen and (max-width: 680px) {
   .card__text {
-    font-size: 14px;
+    font-size: 0.875em;
   }
 }
 .card:hover {
@@ -452,7 +452,7 @@ p {
 
 @media screen and (max-width: 860px) {
   .lost_link{
-    font-size: 14px;
+    font-size: 0.875em;
   }
 }
 
@@ -489,7 +489,7 @@ p {
 .text_description {
   /* text-align: justify; */
   gap: 3.25em;
-  font-size: 0.97em;
+  font-size: 0.875em;
   font-weight: 300;
   line-height: 140%;
   padding-bottom: 3em;
@@ -499,7 +499,7 @@ p {
 .text_description_company {
   margin-top: 0.65em;
   gap: 3.25em;
-  font-size: 0.87em;
+  font-size: 0.875em;
   font-weight: 300;
   line-height: 140%;
   padding-bottom: 3em;
@@ -577,7 +577,7 @@ h2.title_description {
 }
 
 .description__card-list {
-  font-size: 0.9em;
+  font-size: 0.875em;
   font-weight: 300;
   margin-right: 0.3em;
   padding-left: 0.6em;
@@ -678,7 +678,7 @@ h2.title_description {
 
 .intro__date {
   font-family: "Inter";
-  font-size: 0.85em;
+  font-size:0.875em;
   line-height: 140%;
   text-align: left;
   color: var(--accent-color);
@@ -713,7 +713,7 @@ h2.title_description {
 
 .news_link {
   margin-top: 1.1em;
-  font-size: 0.87em;
+  font-size: 0.875em;
   line-height: 140%;
   color: #ffffff;
   background-color: var(--accent-color);
@@ -766,7 +766,7 @@ h2.title_description {
 }
 
 .address {
-  font-size: 0.9em;
+  font-size: 0.875em;
   line-height: 150%;
   color: #666465;
   font-weight: 300;
@@ -927,7 +927,7 @@ h2.title_description {
   list-style: none;
 }
 .telephone_footer {
-  font-size: 0.9em;
+  font-size: 0.875em;
   font-weight: 500;
   line-height: 140%;
   color: #666465;
@@ -937,7 +937,7 @@ h2.title_description {
 .email_footer {
   color: var(--accent-color);
   text-decoration: none;
-  font-size: 0.9em;
+  font-size: 0.875em;
   transition: all 0.3s ease-in;
 }
 
@@ -947,7 +947,7 @@ h2.title_description {
 
 .copyright {
   font-family: Muller;
-  font-size: 0.7em;
+  font-size:0.875em;
   font-weight: 300;
   line-height: 150%;
   text-align: left;
@@ -1204,7 +1204,7 @@ h2.title_description {
 }
 .info {
   font-weight: 300;
-  font-size: 0.8em;
+  font-size: 0.875em;
   line-height: 150%;
   color: #666465;
   padding-bottom: 2em;
@@ -1350,7 +1350,7 @@ h2.title_description {
   display: flex;
   text-decoration: none;
   font-weight: 300;
-  font-size: 0.88em;
+  font-size: 0.875em;
   line-height: 150%;
   color: #666465;
   background-color: #f4f7f9;
@@ -1441,7 +1441,7 @@ h2.title_description {
   border-bottom: 1px solid rgba(102, 100, 101, 0.5);
   padding-top: 1em;
   padding-bottom: 1em;
-  font-size: 0.9em;
+  font-size: 0.875em;
 }
 
 .table_row.blue {
@@ -1457,7 +1457,7 @@ h2.title_description {
 
 .custom_table thead th {
   border-bottom: 1px solid rgba(102, 100, 101, 0.5);
-  font-size: 0.8em;
+  font-size: 0.875em;
   text-align: left;
   font-weight: normal;
   color: var(--accent-color);
@@ -1492,7 +1492,7 @@ h2.title_description {
 
 .table_body {
   font-weight: 300;
-  font-size: 0.8em;
+  font-size: 0.875em;
   line-height: 150%;
   color: #666465;
 }
@@ -1536,7 +1536,7 @@ h2.title_description {
 
 .text_description_information {
   font-weight: 300;
-  font-size: 0.8em;
+  font-size: 0.875em;
   line-height: 150%;
   color: #666465;
 }
@@ -1770,14 +1770,14 @@ h2.title_description {
   background: url(../images/arrow-back.svg) 0 50% no-repeat;
   background-size: 10px 20px;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 0.875em;
   line-height: 150%;
   color: #90aec4;
 }
 
 .link_news_item:hover {
   font-weight: 400;
-  font-size: 14px;
+  font-size: 0.875em;
   line-height: 150%;
   color: #666465;
 }
@@ -1794,7 +1794,7 @@ h2.title_description {
   width: 172px;
   white-space: nowrap;
   /* margin-top: 1.5em; */
-  font-size: 14px;
+  font-size: 0.875em;
   text-decoration: none;
   cursor: pointer;
   text-align: center;
@@ -1918,7 +1918,7 @@ h2.title_description {
 
 .not_found {
   font-weight: 300;
-  font-size: 14px;
+  font-size: 0.875em;
   line-height: 150%;
   color: #666465;
   padding-top: 2.563em;
@@ -1944,7 +1944,7 @@ h2.title_description {
 
 .link_grey {
   font-weight: 700;
-  font-size: 0.9em;
+  font-size: 0.875em;
   line-height: 150%;
   text-decoration: underline;
   -webkit-text-decoration-skip-ink: none;
@@ -1954,7 +1954,7 @@ h2.title_description {
 
 .link_grey:hover {
   font-weight: 700;
-  font-size: 0.9em;
+  font-size: 0.875em;
   line-height: 150%;
   text-decoration: underline;
   -webkit-text-decoration-skip-ink: none;
@@ -1997,7 +1997,7 @@ h2.title_description {
 
 ::-webkit-input-placeholder {
   font-weight: 300;
-  font-size: 14px;
+  font-size: 0.875em;
   opacity: 1;
   color: #666465;
   font-family: "Muller" serif;
@@ -2005,7 +2005,7 @@ h2.title_description {
 
 ::-moz-placeholder {
   font-weight: 300;
-  font-size: 14px;
+  font-size: 0.875em;
   opacity: 1;
   color: #666465;
   font-family: "Muller" serif;
@@ -2013,7 +2013,7 @@ h2.title_description {
 
 :-ms-input-placeholder {
   font-weight: 300;
-  font-size: 14px;
+  font-size:0.875em;
   opacity: 1;
   color: #666465;
   font-family: "Muller" serif;
@@ -2021,7 +2021,7 @@ h2.title_description {
 
 ::-ms-input-placeholder {
   font-weight: 300;
-  font-size: 14px;
+  font-size: 0.875em;
   opacity: 1;
   color: #666465;
   font-family: "Muller" serif;
@@ -2029,7 +2029,7 @@ h2.title_description {
 
 ::placeholder {
   font-weight: 300;
-  font-size: 14px;
+  font-size: 0.875em;
   opacity: 1;
   color: #666465;
   font-family: "Muller" serif;
