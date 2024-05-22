@@ -865,6 +865,7 @@ h2.title_description {
     justify-content: space-between;
   }
 }
+
 @media screen and (max-width: 680px) {
   .group_footer {
     .container {
@@ -891,7 +892,15 @@ h2.title_description {
   gap: 8em;
   margin-left: -3em;
 }
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 960px) {
+
+  .nav_footer {
+    margin-left: unset;
+    gap: 6em
+  }
+}
+
+@media screen and (max-width: 680px) {
   .nav_footer {
     display: none;
   }
