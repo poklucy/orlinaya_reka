@@ -382,6 +382,7 @@ p {
   justify-content: center;
   text-align: center;
   transition: all 0.3s ease-in;
+  color: #fff;
 }
 .card span {
   display: block;
@@ -402,7 +403,6 @@ p {
   font-family: Muller;
   font-size: 1.15em;
   line-height: 140%;
-  color: #ffffff;
   text-align: center;
 }
 
