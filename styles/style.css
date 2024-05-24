@@ -158,6 +158,10 @@ p {
   transition: all 0.3s ease-in;
 }
 
+.link_clients{
+  font-size: 16px;
+}
+
 .header__menu-link:hover {
   color: var(--accent-color);
 }
@@ -1111,7 +1115,7 @@ h2.title_description {
     padding-left: 16px;
     background: #ECF0F4;
     font-weight: 300;
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .custom-select select {
