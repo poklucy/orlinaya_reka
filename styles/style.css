@@ -42,14 +42,14 @@ p {
   font-weight: 300;
   font-size: 16px;
   line-height: 150%;
-  color: #666465;
+  color: #51524d;
 }
 
 .text_breadcrumbs {
   font-weight: 300;
-  font-size: 11px;
+  font-size: 13px;
   line-height: 150%;
-  color: #666465;
+  color: #51524d;
   text-decoration: none;
 }
 .header {
@@ -108,8 +108,8 @@ p {
   flex-direction: row;
   gap: 1vw;
   align-items: center;
-  color: #666465;
-  font-size: 0.74em;
+  color: #51524d;
+  font-size: 14px;
   font-weight: 400;
   line-height: 140%;
   margin-right: 29px;
@@ -151,7 +151,7 @@ p {
 
 .header__menu-link {
   text-decoration: none;
-  color: #666465;
+  color: #51524d;
   display: flex;
   padding-top: 1.1em;
   padding-bottom: 1em;
@@ -211,7 +211,7 @@ p {
   width: 100%;
   height: 1px;
   border-radius: 1px;
-  background: #666465;
+  background: #51524d;
   transition: transform 0.3s ease, opacity 0.3s ease, background-color 0.3s ease;
   transform-origin: 50%;
 }
@@ -225,7 +225,7 @@ p {
   bottom: 0px;
 }
 .main-nav__toggle.is-active span {
-  background: #666465;
+  background: #51524d;
   width: 90%;
   margin-left: 2px;
 }
@@ -286,7 +286,7 @@ p {
 }
 .search_btn:hover {
   background: #dfe7ee;
-  color: #666465;
+  color: #51524d;
 }
 
 .search {
@@ -414,11 +414,11 @@ p {
 
 .card:hover {
   background-color: #CDD9E2; /* цвет фона при наведении */
-  color: #666465; /* цвет текста при наведении */
+  color: #51524d; /* цвет текста при наведении */
 }
 
 .lots_title {
-  color: #666465;
+  color: #51524d;
   display: flex;
 }
 
@@ -455,7 +455,7 @@ p {
 }
 
 .lost_link:hover {
-  color: #666465;
+  color: #51524d;
   text-decoration: none;
 }
 
@@ -468,12 +468,12 @@ p {
   font-size: 1.5em;
   line-height: 150%;
   text-align: left;
-  color: #666465;
+  color: #51524d;
   padding-bottom: 1.15em;
 
   a {
     text-decoration: none;
-    color: #666465;
+    color: #51524d;
     pointer-events: none;
   }
 }
@@ -491,7 +491,7 @@ p {
   font-weight: 300;
   line-height: 140%;
   padding-bottom: 3em;
-  color: #666465;
+  color: #51524d;
 }
 
 .text_description_company {
@@ -501,7 +501,7 @@ p {
   font-weight: 300;
   line-height: 140%;
   padding-bottom: 3em;
-  color: #666465;
+  color: #51524d;
 }
 
 .company {
@@ -526,7 +526,7 @@ p {
   font-size: 16px;
   font-weight: 300;
   line-height: 150%;
-  color: #666465;
+  color: #51524d;
   width: 70%;
   padding-bottom: 0.6em;
 }
@@ -540,7 +540,7 @@ h2.title_description {
   font-size: 1.1em;
   line-height: 140%;
   text-align: left;
-  color: #666465;
+  color: #51524d;
   font-weight: 500;
 }
 
@@ -579,7 +579,7 @@ h2.title_description {
   font-weight: 300;
   margin-right: 0.3em;
   padding-left: 0.6em;
-  color: #666465;
+  color: #51524d;
   line-height: 150%;
   flex: 1;
   list-style: none;
@@ -624,7 +624,7 @@ h2.title_description {
   font-weight: 700;
   line-height: 140%;
   padding-bottom: 1em;
-  color: #666465;
+  color: #51524d;
 }
 
 .content-section_news {
@@ -665,7 +665,7 @@ h2.title_description {
   font-size: 1.1em;
   font-weight: 500;
   line-height: 140%;
-  color: #666465;
+  color: #51524d;
 }
 
 @media screen and (max-width: 680px) {
@@ -702,7 +702,7 @@ h2.title_description {
   font-size: 16px;
   font-weight: 300;
   line-height: 150%;
-  color: #666465;
+  color: #51524d;
   text-align: left;
   p {
     margin-bottom: 20px;
@@ -725,7 +725,7 @@ h2.title_description {
 
 .news_link:hover {
   background-color: #CDD9E2;
-  color: #666465;
+  color: #51524d;
 }
 
 .contact {
@@ -766,7 +766,7 @@ h2.title_description {
 .address {
   font-size: 16px;
   line-height: 150%;
-  color: #666465;
+  color: #51524d;
   font-weight: 300;
 }
 .address_contact {
@@ -791,7 +791,7 @@ h2.title_description {
   font-size: 1.5em;
   line-height: 140%;
   font-weight: 700;
-  color: #666465;
+  color: #51524d;
   padding-bottom: 1em;
 }
 
@@ -799,7 +799,7 @@ h2.title_description {
   font-size: 1.2em;
   line-height: 140%;
   font-weight: 700;
-  color: #666465;
+  color: #51524d;
   padding-bottom: 1em;
 }
 
@@ -807,7 +807,7 @@ h2.title_description {
   font-size: 1.1em;
   font-weight: 500;
   line-height: 140%;
-  color: #666465;
+  color: #51524d;
   text-decoration: none;
 }
 
@@ -820,7 +820,7 @@ h2.title_description {
 }
 
 .email:hover {
-  color: #666465;
+  color: #51524d;
 }
 
 .map_wrapper {
@@ -914,7 +914,7 @@ h2.title_description {
   font-size: 0.75em;
   font-weight: 400;
   line-height: 140%;
-  color: #666465;
+  color: #51524d;
   transition: all 0.3s ease-in;
 }
 .footer_menu_item {
@@ -928,7 +928,7 @@ h2.title_description {
   font-size: 16px;
   font-weight: 500;
   line-height: 140%;
-  color: #666465;
+  color: #51524d;
   text-decoration: none;
 }
 
@@ -940,7 +940,7 @@ h2.title_description {
 }
 
 .email_footer:hover {
-  color: #666465;
+  color: #51524d;
 }
 
 .copyright {
@@ -949,7 +949,7 @@ h2.title_description {
   font-weight: 300;
   line-height: 150%;
   text-align: left;
-  color: #666465;
+  color: #51524d;
   width: 100%;
 }
 
@@ -1006,7 +1006,7 @@ h2.title_description {
   font-weight: 500;
   font-size: 18px;
   line-height: 140%;
-  color: #666465;
+  color: #51524d;
   margin-right: 40px;
   margin-bottom: 42px;
 }
@@ -1040,7 +1040,7 @@ h2.title_description {
     font-weight: 300;
     font-size: 14px;
     line-height: 150%;
-    color: #666465;
+    color: #51524d;
     padding-top: 22px;
     padding-bottom: 22px;
     padding-left: 16px;
@@ -1055,7 +1055,7 @@ h2.title_description {
     font-weight: 300;
     font-size: 11px;
     line-height: 150%;
-    color: #666465;
+    color: #51524d;
   }
 
   .checkbox-wrapper {
@@ -1066,7 +1066,7 @@ h2.title_description {
     align-items: center;
     .text {
       font-size: 11px;
-      color: #666465;
+      color: #51524d;
     }
   }
 .send-btn {
@@ -1134,7 +1134,7 @@ h2.title_description {
 
   .select-items div,
   .select-selected {
-    color: #666465;
+    color: #51524d;
     cursor: pointer;
   }
   .select-items {
@@ -1166,7 +1166,7 @@ h2.title_description {
     }
     label {
       font-size: 11px;
-      color: #666465;
+      color: #51524d;
     }
   }
 
@@ -1188,7 +1188,7 @@ h2.title_description {
 .breadcrumbs li {
   display: inline;
   font-size: 0.65em;
-  color: #666465;
+  color: #51524d;
   line-height: 150%;
   font-weight: 300;
 }
@@ -1204,7 +1204,7 @@ h2.title_description {
   font-weight: 300;
   font-size: 16px;
   line-height: 150%;
-  color: #666465;
+  color: #51524d;
   padding-bottom: 2em;
 }
 
@@ -1255,7 +1255,7 @@ h2.title_description {
   margin-top: 24px;
   margin-bottom: 24px;
   text-decoration: none;
-  color: #666465;
+  color: #51524d;
   .st0 {
     fill: white;
   }
@@ -1350,7 +1350,7 @@ h2.title_description {
   font-weight: 300;
   font-size: 16px;
   line-height: 150%;
-  color: #666465;
+  color: #51524d;
   background-color: #ECF0F4;
   padding-left: 1em;
   padding-top: 1.1em;
@@ -1492,14 +1492,14 @@ h2.title_description {
   font-weight: 300;
   font-size: 14px;
   line-height: 150%;
-  color: #666465;
+  color: #51524d;
 }
 
 .tel_table {
   font-weight: 300;
   font-size: 1em;
   line-height: 150%;
-  color: #666465;
+  color: #51524d;
   text-decoration: none;
 }
 
@@ -1536,7 +1536,7 @@ h2.title_description {
   font-weight: 300;
   font-size: 16px;
   line-height: 150%;
-  color: #666465;
+  color: #51524d;
 }
 .clients_pages,
 .part_pages {
@@ -1563,13 +1563,13 @@ h2.title_description {
   gap: 0.313em;
   font-weight: 300;
   text-decoration: none;
-  font-size: 0.75em;
+  font-size: 14px;
   padding-left: 3em;
-  padding-top: 1em;
-  padding-bottom: 1em;
+  padding-top: 1.2em;
+  padding-bottom: 1.2em;
   padding-right: 3em;
   line-height: 1.25;
-  color: #666465;
+  color: #51524d;
   background-color: #ECF0F4;
   text-align: center;
   display: inline-flex;
@@ -1591,7 +1591,7 @@ h2.title_description {
   }
 }
 .border {
-  border-color: (#666465, 0.5);
+  border-color: (#51524d, 0.5);
   height: 1px;
   margin-bottom: 2em;
 }
@@ -1605,14 +1605,14 @@ h2.title_description {
   font-weight: 300;
   font-size: 12px;
   line-height: 150%;
-  color: #666465;
+  color: #51524d;
   gap: 1em;
   padding-right: var(--padding);
   margin-bottom: 3em;
 }
 
 .button_next {
-  color: #666465;
+  color: #51524d;
   background-color: #CDD9E2;
   border: none;
   padding: 1.5em 1.5em;
@@ -1714,7 +1714,7 @@ h2.title_description {
     margin-bottom: 36px;
     a {
       text-decoration: none;
-      color: #666465;
+      color: #51524d;
       pointer-events: all;
     }
   }
@@ -1776,7 +1776,7 @@ h2.title_description {
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
-  color: #666465;
+  color: #51524d;
 }
 
 .contacts_pages {
@@ -1784,7 +1784,7 @@ h2.title_description {
 }
 
 .btn {
-  color: #666465;
+  color: #51524d;
   background-color:#CDD9E2;
   border: 0;
   padding: 1.5em 1.5em;
@@ -1805,7 +1805,7 @@ h2.title_description {
   font-weight: 300;
   font-size: 10px;
   line-height: 150%;
-  /* color: #666465; */
+  /* color: #51524d; */
 }
 
 .count:hover {
@@ -1878,7 +1878,7 @@ h2.title_description {
   gap: 1.5em;
   font-weight: 300;
   font-size: 11px;
-  color: #666465;
+  color: #51524d;
   align-items: center;
   .pages_item,
   .total {
@@ -1917,7 +1917,7 @@ h2.title_description {
   font-weight: 300;
   font-size: 16px;
   line-height: 150%;
-  color: #666465;
+  color: #51524d;
   padding-top: 2.563em;
   padding-bottom: 3.938em;
   display: flex;
@@ -1946,7 +1946,7 @@ h2.title_description {
   text-decoration: underline;
   -webkit-text-decoration-skip-ink: none;
   text-decoration-skip-ink: none;
-  color: #666465;
+  color: #51524d;
 }
 
 .link_grey:hover {
@@ -1996,7 +1996,7 @@ h2.title_description {
   font-weight: 300;
   font-size: 16px;
   opacity: 1;
-  color: #666465;
+  color: #51524d;
   font-family: "Muller" serif;
 }
 
@@ -2004,7 +2004,7 @@ h2.title_description {
   font-weight: 300;
   font-size: 16px;
   opacity: 1;
-  color: #666465;
+  color: #51524d;
   font-family: "Muller" serif;
 }
 
@@ -2012,7 +2012,7 @@ h2.title_description {
   font-weight: 300;
   font-size:16px;
   opacity: 1;
-  color: #666465;
+  color: #51524d;
   font-family: "Muller" serif;
 }
 
@@ -2020,7 +2020,7 @@ h2.title_description {
   font-weight: 300;
   font-size:16px;
   opacity: 1;
-  color: #666465;
+  color: #51524d;
   font-family: "Muller" serif;
 }
 
@@ -2028,7 +2028,7 @@ h2.title_description {
   font-weight: 300;
   font-size: 16px;
   opacity: 1;
-  color: #666465;
+  color: #51524d;
   font-family: "Muller" serif;
 }
 
