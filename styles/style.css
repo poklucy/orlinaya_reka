@@ -1261,16 +1261,25 @@ h2.title_description {
   text-decoration: none;
   color: #51524d;
   .st0 {
-    fill: white;
+    fill: #fff;
+  }
+  .st1 {
+    fill: #E2574C;
+  }
+  .st2 {
+    fill: #B53629;
   }
   &:hover {
     color: #90aec4;
 
     .st0 {
-      fill: #CDD9E2;
+      fill: #fff;
+    }
+    .st1 {
+      fill: #90aec4;
     }
     .st2 {
-      stroke: #CDD9E2;
+      fill: #7396AF;
     }
   }
 }
