@@ -1372,9 +1372,14 @@ h2.title_description {
 .left_menu_link:hover{
    background-color: #CDD9E2;
 }
+.left_menu_insert 
+.left_menu_link {
+  background-color: #fbfcfd;
+}
 
 .left__menu-item._active .left_menu_link {
   background: #CDD9E2;
+  color: #b45c5b;
 }
 .left__menu-item._active .left__menu-link,
 .left__menu-item._active .left__menu-link:hover {
@@ -1399,6 +1404,8 @@ h2.title_description {
 }
 
 .left__menu-item .dropdown-link.active {
+  /* color: #b45c5b;
+  background-color:  #CDD9E2; */
   &:after {
     transform: translateY(-50%) rotate(180deg);
   }
