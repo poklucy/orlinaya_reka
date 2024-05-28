@@ -1953,8 +1953,9 @@ h2.title_description {
 
 .cookie {
   display: flex;
-  flex-direction: row;
-  gap: 5em;
+  flex-direction: column;
+  width: 29.938em;
+  gap: 3.938em;
 }
 
 @media screen and (max-width: 680px){
