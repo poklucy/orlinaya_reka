@@ -1404,7 +1404,7 @@ h2.title_description {
 }
 
 .left__menu-item .dropdown-link.active {
-  /* color: #b45c5b;
+  color: #b45c5b;
   background-color:  #CDD9E2; */
   &:after {
     transform: translateY(-50%) rotate(180deg);
