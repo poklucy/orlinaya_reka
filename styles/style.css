@@ -2074,3 +2074,31 @@ h2.title_description {
   display: none;
   margin-bottom: 10px !important;
 }
+
+.menu_info{
+padding-left: 3em;
+list-style-type: none;
+}
+
+.menu_info_item{
+  text-decoration: none;
+  color: #51524d;
+}
+
+.menu_info_item:hover{
+ color: #7396AF;
+}
+
+ul.menu_info li {
+  color:#51524d;
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+
+ul.menu_info li:hover {
+  color:#7396AF;
+}
+
+.menu_info li::before {
+  content: "\2014";
+ }
