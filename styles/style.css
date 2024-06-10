@@ -156,6 +156,7 @@ p {
   padding-top: 1.1em;
   padding-bottom: 1em;
   transition: all 0.3s ease-in;
+  text-transform: uppercase;
 }
 
 .link_clients{
