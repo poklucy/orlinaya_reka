@@ -925,6 +925,8 @@ h2.title_description {
   line-height: 140%;
   color: #51524d;
   transition: all 0.3s ease-in;
+  text-transform: uppercase;
+  
 }
 .footer_menu_item {
   margin-bottom: 0.8em;
