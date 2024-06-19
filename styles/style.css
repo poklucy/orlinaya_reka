@@ -1384,9 +1384,14 @@ h2.title_description {
   background-color: #fbfcfd;
 }
 
+.left_menu_insert 
+.left_menu_link:hover {
+  background-color: #fbfcfd;
+  color:#7396AF;
+}
+
 .left__menu-item._active .left_menu_link {
-  background: #CDD9E2;
-  color: #b45c5b;
+  
 }
 .left__menu-item._active .left__menu-link,
 .left__menu-item._active .left__menu-link:hover {
@@ -1467,13 +1472,8 @@ h2.title_description {
   padding-top: 1em;
   padding-bottom: 1em;
   font-size: 16px;
-  @media screen and (min-width: 860px) {
-  &:first-child {
-    width: 60%;
-  }
 }
 
-}
 
 .table_row.blue {
   color: var(--accent-color);
@@ -1501,10 +1501,9 @@ h2.title_description {
 }
 .custom_table .inner-table td {
   vertical-align: top;
+  padding-right: 20px;
 }
-.custom_table .inner-table td p {
-  margin-bottom: 20px;
-  margin-right: 20px;
+.custom_table .inner-table td p:not(:last-child) {
   text-align: left;
   
 }
@@ -1730,6 +1729,7 @@ h2.title_description {
   }
   .custom_table .inner-table td p {
     margin-bottom: 0;
+    
     
   }
   .custom_table thead tr,
